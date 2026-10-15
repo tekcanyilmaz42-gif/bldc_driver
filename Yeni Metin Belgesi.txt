@@ -1,0 +1,188 @@
+# 10 kW 48V Hibrit BLDC / PMSM & Fırçasız EESM Motor Sürücü Sistemi
+# Teknik Dokümantasyon ve Donanım Şartnamesi (Nihai Sürüm - Rev 2.3)
+
+Bu proje; 48V nominal gerilimde 10 kW tepe gücüne sahip fırçasız motorların (BLDC/PMSM)
+sürülmesi ve kart üzerindeki entegre tam köprü uyartım katı ile Fırçasız Harici Uyartımlı
+Senkron Motorların (Brushless EESM) döner trafo primerini doğrudan sürebilmek amacıyla
+tasarlanmış yüksek performanslı bir donanım ve gömülü kontrol platformudur.
+
+================================================================================
+1. GÜÇ VE LOJİK BESLEME KATLARI
+================================================================================
+
+1.1. 12V Yardımcı Besleme (U9 - MIC2128 DC-DC Buck Denetleyici)
+--------------------------------------------------------------------------------
+* Çalışma Aralığı: Nominal 48V DC (36V - 54V VBAT barası).
+* Anahtarlama Elemanları: Üst kol Q14, Alt kol Q13 (CSD19538Q2 N-Kanal).
+* Güç Endüktansı: L2 = 10 uH.
+* Çıkış: 12.0V regüle gerilim (IR2110 gate sürücü VCC beslemeleri ve 3.3V LDO grubu için).
+* DC Geri Besleme (FB Döngüsü): R18 (20k), R19 (1k), R97 (1k) basamağı ve C11 (100nF) / 
+  R5 (36k) ripple enjeksiyon hattı U9 Pin 13'e (FB) bağlıdır.
+* Frekans & Koruma: R21 (100k) ve R22 (60k) ile ~350 kHz anahtarlama frekansı; 
+  Pin 2 (ILIM) üzerinde R4 (1.5k) akım sınırlama direnci.
+
+1.2. 3.3V Ayrık Sayısal ve Analog Besleme Mimarisi (3x NCP1117 LDO)
+--------------------------------------------------------------------------------
+Lineer regülatörler üzerindeki termal yükü paylaştırmak ve analog/dijital gürültü kuplajını 
+önlemek amacıyla 3 adet bağımsız LDO hattı oluşturulmuştur. LDO çıkışları birbirine paralel 
+bağlanmaz, bağımsız güç bölgelerini besler:
+* U8A (NCP1117-3.3) -> 3V3_MCU: dsPIC33CK sayısal çekirdek beslemeleri (Pin 12, 31, 51, 71).
+* U8B (NCP1117-3.3) -> 3V3_ANA: dsPIC AVDD (Pin 25), INA181 akım amfileri ve TLV9001 referansları.
+* U8C (NCP1117-3.3) -> 3V3_IO: Beş adet IR2110 lojik VDD girişleri (Pin 11), ADuM1201 VDD2 
+  tarafı ve QEI enkoder pull-up hatları.
+* Filtreleme: Her bir regülatörün girişinde 10 uF, çıkışında ise 10 uF düşük ESR seramik 
+  filtre kapasitesi yer alır.
+
+1.3. İzole USB-UART Arayüzü (Galvanik İzolasyon)
+--------------------------------------------------------------------------------
+* USB Portu: J23 USB Type-C konnektör, R41 ve R42 (5.1k) CC pull-down dirençleri.
+* USB Köprüsü: U5 (CH340G) USB-UART dönüştürücü ve Y2 (12 MHz) harici kristal.
+* Dijital İzolasyon: U4 (ADuM1201) çift kanallı manyetik izolatör.
+  - PC Bölgesi: VDD1 = 5V (USB VBUS), GND1 = GND_PC.
+  - MCU Bölgesi: VDD2 = 3V3_IO, GND2 = GND (Sistem Ana Şasesi).
+  - İletişim Yönleri ve Net Eşleşmeleri:
+    * CH340G TXD (Pin 2) -> ADuM1201 VIA (Pin 2) -> VOA (Pin 7) -> dsPIC RXD_DSP (Pin 46)
+    * dsPIC TXD_DSP (Pin 47) -> ADuM1201 VIB (Pin 6) -> VOB (Pin 3) -> CH340G RXD (Pin 3)
+
+================================================================================
+2. 3-FAZ GÜÇ KATI VE GATE SÜRÜCÜ MİMARİSİ
+================================================================================
+
+2.1. 3-Faz Evirici Köprüsü (Inverter)
+--------------------------------------------------------------------------------
+* MOSFET Yapısı: Her kolda 2 adet paralel bağlı toplam 12 adet DI101N10PQ (100V N-Kanal, DFN5x6 PowerPAK):
+  - U Fazı: Üst Kol Q1 || Q2, Alt Kol Q7 || Q8
+  - V Fazı: Üst Kol Q3 || Q4, Alt Kol Q9 || Q10
+  - W Fazı: Üst Kol Q5 || Q6, Alt Kol Q11 || Q12
+* Bara Filtreleme Matrisi: 3x8 diziliminde 24 adet 470 uF elektrolitik kondansatör 
+  (C108 - C131) ve paralel 24 adet 2.2 uF yüksek frekans seramik dekuplaj kapasitesi 
+  (C53 - C75). Bara beslemesi doğrudan VBAT hattıdır.
+* Termal & Bakır Dağıtımı: DFN5x6 kılıfların Drain termal pad'i altına en az 6-8 adet 
+  termal via basılarak alt katmandaki geniş soğutma yüzeyine bağlanmalı ve alttan 
+  harici alüminyum soğutucu blok ile temas sağlanmalıdır.
+
+2.2. Gate Sürücüler (U1, U2, U3 - IR2110S)
+--------------------------------------------------------------------------------
+* Lojik Besleme (VDD - Pin 11): 3V3_IO (dsPIC lojik seviyesiyle tam uyumlu).
+* Güç Beslemesi (VCC - Pin 3): 12V yardımcı besleme.
+* Bootstrap Ağı: D1, D3, D5 ultra-hızlı diyotların (ES1J) anotları doğrudan 12V hattına 
+  bağlıdır. Bootstrap kapasite grubu her faz için 1 uF || 100 nF paralel seramiktir.
+* Bağımsız Kapı Sürüşü: Paralel MOSFET'lerin kapı osilasyonunu önlemek amacıyla her bir 
+  MOSFET için bağımsız 10 Ohm gate direnci (örn. G_UH1 ve G_UH2), paralel ters bağlı 
+  BAT54/SS14 hızlı deşarj diyotu ve 10 kOhm gate-source pull-down direnci uygulanmıştır.
+* Donanımsal Koruma (Shutdown - SD): Tüm sürücülerin SD pinleri dsPIC Pin 74'e bağlıdır. 
+  MCU açılış ve reset aşamasında sürücüleri aktif kapalı (güvenli) tutmak için hat 
+  üzerinde 3.3V donanımsal pull-up direnci yer almaktadır.
+
+================================================================================
+3. AKIM VE KONUM ALGILAMA DEVRELERİ
+================================================================================
+
+3.1. Faz Akımı Ölçümü ve 1.65V Sanal Şase (VREF)
+--------------------------------------------------------------------------------
+* Şönt Dirençler: R1 (U), R2 (V), R3 (W) - HoLR52512 serisi 0.2 mOhm (200 uOhm) metal 
+  şerit şöntler. Ölçüm yolları 4-telli Kelvin bağlantısıyla doğrudan şönt pad'lerinden alınır.
+* Akım Algılama Amfileri: U7, U22, U14 (INA181A1, 20 V/V kazanç). 1.65V sanal şase ile 
+  birlikte +/- 412.5A tepe dinamik aralığı sunarak 10 kW tepe akımlarında doymayı engeller.
+* Referans Tamponları: Her faza özel U10, U11, U12 (TLV9001) gerilim izleyicileri ile 
+  1.65V sanal şase üretilir (0A = 1.65V çift yönlü okuma).
+* Örnekleme Zamanlaması: Şöntler alt kollarda yer aldığından ADC örneklemesi alt kolların 
+  iletimde olduğu merkezlenmiş PWM periyot tabanında (center-aligned) gerçekleştirilir.
+
+3.2. Konum Algılama (QEI Enkoder Arayüzü)
+--------------------------------------------------------------------------------
+* Giriş Konnektörü: 3V3_IO, Enkoder_A, Enkoder_B, Enkoder_Z, GND.
+* Donanımsal Giriş Filtresi: 1.5 kOhm pull-up (R76-R78), 100 Ohm seri koruma (R80-R82) 
+  ve 20 pF (C103-C105) C0G zemin filtre kapasiteleri.
+
+================================================================================
+4. ENTEGRE EESM (HARİCİ UYARTIM) SÜRÜCÜ KATI
+================================================================================
+
+4.1. Tam Köprü (H-Bridge) ve Döner Trafo Primer Sürüşü
+--------------------------------------------------------------------------------
+* H-Köprüsü MOSFET'leri: 4 adet DI101N10PQ MOSFET (Q15, Q16, Q17, Q18). Drain uçları 
+  +48V VBAT barasına bağlıdır.
+* Gate Sürücüler: 2 adet IR2110S (U24: Kol 1, U25: Kol 2). Bootstrap diyotları (D12, D14) 
+  12V hattından beslenir.
+* Donanımsal Shutdown: U24 ve U25 sürücülerinin SD pinleri sistem geneli SD koruma 
+  hattına (dsPIC Pin 74 + Pull-Up) bağlıdır.
+* Sürüş Modu: Döner transformatörün manyetik doyuma girmemesi ve bootstrap kapasitelerinin 
+  şarjlı kalması için primer sargısı 10 kHz - 50 kHz aralığında yüksek frekanslı AC PWM ile sürülür.
+* AC Çıkış Portu: Döner transformatör primer sargı bağlantıları J6 (primer_1) ve J7 (primer_2).
+
+4.2. Primer Akım Algılama Devresi
+--------------------------------------------------------------------------------
+* Şönt Direnci: R96 (HoLR52512 serisi 0.2 mOhm metal şerit şönt, 4-telli Kelvin sense), 
+  H-köprüsü alt kol kaynakları ile GND arasındadır.
+* Akım Algılama Amfisi: U28 (INA181A1, 20 V/V kazanç) ve U27 (TLV9001) 1.65V referans 
+  devresi üzerinden dsPIC Pin 23'e (I_FIELD_AN) aktarılır.
+
+================================================================================
+5. dsPIC33CK256MP508 (80-PIN TQFP) PİN HARİTASI
+================================================================================
+
+| Pin No | Port Adı       | Modül / İşlev       | Yapılandırma ve Donanımsal Bağlantı         |
+|:------:|:---------------|:--------------------|:---------------------------------------------|
+|   1    | RB14 / RP46    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+|   2    | RE0 / PWM1L    | Dedicated PWM 1L    | Faz U Alt Kol Kapı Girişi (G_UL_IN)          |
+|   3    | RB15 / RP47    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+|   4    | RE1 / PWM1H    | Dedicated PWM 1H    | Faz U Üst Kol Kapı Girişi (G_UH_IN)          |
+|   9    | MCLR           | Master Clear        | SW1 Butonu, 10k Pull-up, ICSP Soketi Pin 1   |
+|  11    | VSS            | Şase                | Sistem 0V Referansı (GND)                    |
+|  12    | VDD            | Sayısal Besleme     | 3V3_MCU Besleme + 100 nF Dekuplaj            |
+|  16    | RA0 / AN0      | Dedicated ADC Core0 | Faz U Akım Okuma (IN181_Uout)                |
+|  17    | RE2 / PWM2L    | Dedicated PWM 2L    | Faz V Alt Kol Kapı Girişi (G_VL_IN)          |
+|  18    | RA1 / AN1      | Dedicated ADC Core1 | Faz V Akım Okuma (IN181_Vout)                |
+|  19    | RE3 / PWM2H    | Dedicated PWM 2H    | Faz V Üst Kol Kapı Girişi (G_VH_IN)          |
+|  21    | RA3 / AN3      | Shared ADC Core     | 48V DC Bara Gerilim Bölücü (V_BUS_SENSE)     |
+|  22    | RE4 / PWM3L    | Dedicated PWM 3L    | Faz W Alt Kol Kapı Girişi (G_WL_IN)          |
+|  23    | RA4 / AN4      | Shared ADC Core     | EESM Uyartım Akımı Okuma (I_FIELD_AN)        |
+|  24    | RE5 / PWM3H    | Dedicated PWM 3H    | Faz W Üst Kol Kapı Girişi (G_WH_IN)          |
+|  25    | AVDD           | Analog Besleme      | 3V3_ANA + LC Filtre (Ferrite Bead + 100nF)   |
+|  26    | AVSS           | Analog Şase         | Sistem 0V Referansı (GND)                    |
+|  31    | VDD            | Sayısal Besleme     | 3V3_MCU Besleme + 100 nF Dekuplaj            |
+|  32    | VSS            | Şase                | Sistem 0V Referansı (GND)                    |
+| 34/35  | OSC1 / OSC2    | Sistem Osilatörü    | 12 MHz Harici Kristal (Y3) + 20 pF Kapasite  |
+|  37    | RE6 / PWM4L    | Dedicated PWM 4L    | EESM H-Köprüsü Kol 1 Low-Side (primer_1_L)   |
+|  39    | RE7 / PWM4H    | Dedicated PWM 4H    | EESM H-Köprüsü Kol 1 High-Side (primer_1_H)  |
+|  42    | RE8 / PWM5L    | Dedicated PWM 5L    | EESM H-Köprüsü Kol 2 Low-Side (primer_2_L)   |
+|  44    | RE9 / PWM5H    | Dedicated PWM 5H    | EESM H-Köprüsü Kol 2 High-Side (primer_2_H)  |
+|  46    | RC8 / RP56     | UART1 RX (PPS)      | RPINR18bits.U1RXR = 56; (RXD_DSP)            |
+|  47    | RC9 / RP57     | UART1 TX (PPS)      | RPORbits.RP57R = _RPOUT_U1TX; (TXD_DSP)      |
+|  50    | VSS            | Şase                | Sistem 0V Referansı (GND)                    |
+|  51    | VDD            | Sayısal Besleme     | 3V3_MCU Besleme + C104 (100nF) Dekuplaj      |
+|  52    | RD7 / RP71     | QEI1 Index (PPS)    | RPINR15bits.QEINDX1R = 71; (Enkoder_Z)       |
+|  53    | RD6 / RP70     | QEI1 Faz B (PPS)    | RPINR14bits.QEIB1R = 70; (Enkoder_B)         |
+|  54    | RD5 / RP69     | QEI1 Faz A (PPS)    | RPINR14bits.QEIA1R = 69; (Enkoder_A)         |
+|  58    | RB7 / AN9      | Shared ADC Core     | Faz W Akım Okuma (IN181_Wout)                |
+|  60    | RB8 / PGD1     | ICSP Data           | JICSPSoket1 Pin 4 (Programlama Veri)         |
+|  61    | RB9 / PGC1     | ICSP Clock          | JICSPSoket1 Pin 5 (Programlama Saati)        |
+|  70    | VSS            | Şase                | Sistem 0V Referansı (GND)                    |
+|  71    | VDD            | Sayısal Besleme     | 3V3_MCU Besleme + 100 nF Dekuplaj            |
+|  74    | RD0 / RP64     | GPIO Out (Active H) | IR2110 Donanımsal SD Kapatma + 3.3V Pull-Up  |
+|  75    | RB10 / RP42    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+|  76    | RB11 / RP43    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+|  78    | RB12 / RP44    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+|  80    | RB13 / RP45    | GPIO / Serbest      | Kullanıcı Tanımlı / Serbest I/O              |
+
+================================================================================
+6. STANDART ICSP PROGRAMLAMA ARAYÜZÜ (JICSPSoket1)
+================================================================================
+* Pin 1: MCLR (dsPIC Pin 9 - Reset ve VPP Programlama Gerilimi)
+* Pin 2: 3V3_MCU (dsPIC VDD - Programlayıcı Hedef Gerilimi Algılama)
+* Pin 3: GND (dsPIC VSS - Ortak Sinyal ve Güç Şasesi)
+* Pin 4: PGD1 (dsPIC Pin 60 - RB8 Programlama Veri Hattı)
+* Pin 5: PGC1 (dsPIC Pin 61 - RB9 Programlama Saat Hattı)
+
+================================================================================
+7. 10 kW GÜÇ İÇİN KRİTİK PCB VE TERMAL YERLEŞİM KURALLARI
+================================================================================
+1. 4-Telli Kelvin Sense Bağlantısı: R1, R2, R3 ve R96 şönt dirençlerinin ölçüm 
+   hatları doğrudan direnç iç pad'lerinden diferansiyel çift olarak INA181'e taşınmalıdır.
+2. DFN5x6 Termal Via Matrisi: Her MOSFET Drain yüzeyine en az 6-8 adet termal via 
+   yerleştirilmeli ve alt katmandaki geniş soğutma bakırına harici alüminyum blok bağlanmalıdır.
+3. Ground Bounce Bastırma: IR2110 COM pinleri ile sistem şasesi (GND) arasındaki 
+   parazitik endüktansı önlemek için sürücü lojik şasesi ve güç şasesi yıldız topolojiyle bağlanmalıdır.
+4. EESM HF Sürüşü: IR2110 bootstrap kondansatörlerinin boşalmaması için uyartım H-köprüsü 
+   en az 10 kHz - 50 kHz frekansında anahtarlanmalıdır.

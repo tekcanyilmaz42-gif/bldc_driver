@@ -1,12 +1,27 @@
-﻿# KiCad temporary and backup files
-*.kicad_prl
-*-bak
-*-bak*
+# KiCad temporary & autosave files
+*.bak
+*.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
-_autosave-*
-*.lck
+*-bak
+*-bak*
 *~
-fp-info-cache
-*-backups/
+~*
+*.tmp
+*.lck
+~*.lck
+_autosave-*
+#auto_saved_files#
+
+# KiCad project local settings (contains user-specific window layout, zoom, etc.)
+*.kicad_prl
+
+# KiCad local history
 .history/
+
+# OS / Editor temporary files
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+

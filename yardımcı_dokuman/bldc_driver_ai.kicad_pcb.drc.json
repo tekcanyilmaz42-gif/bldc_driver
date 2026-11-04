@@ -1,0 +1,1572 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-01T10:50:02",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "Text height out of range",
+            "key": "text_height"
+        },
+        {
+            "description": "Text thickness out of range",
+            "key": "text_thickness"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "bldc_driver_ai.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 için [3V3_ANA] C38 ayak F.Cu",
+                    "pos": {
+                        "x": 205.823,
+                        "y": 61.585
+                    },
+                    "uuid": "597a4da3-4a4c-436b-ae7c-7da367b735b6"
+                },
+                {
+                    "description": "5 için [3V3_ANA] U17 ayak F.Cu",
+                    "pos": {
+                        "x": 206.34,
+                        "y": 125.66
+                    },
+                    "uuid": "0555e3c0-59e4-4a41-8967-985a23974959"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Geçit [VBAT] F.Cu - B.Cu üzerinde",
+                    "pos": {
+                        "x": 84.5,
+                        "y": 87.5
+                    },
+                    "uuid": "f5f0bf8c-d8bd-4f7a-8aa8-844529fd9280"
+                },
+                {
+                    "description": "9 için [VBAT] Q15 ayak F.Cu",
+                    "pos": {
+                        "x": 148.325,
+                        "y": 127.71
+                    },
+                    "uuid": "df000b14-c117-4c22-a083-e3a592e55245"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [VBAT] J47",
+                    "pos": {
+                        "x": 122.7,
+                        "y": 12.25
+                    },
+                    "uuid": "34a37972-e9ff-4cd7-9b38-ddc2161dd463"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [VBAT] J1",
+                    "pos": {
+                        "x": 97.975,
+                        "y": 7.6
+                    },
+                    "uuid": "7b52426f-ee88-42f1-9f32-f5dcfc950934"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Bölge [GND] B.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 115.3,
+                        "y": 10.3
+                    },
+                    "uuid": "3df09d37-567e-4322-a2c0-241b7cc20194"
+                },
+                {
+                    "description": "Bölge [GND] B.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 0.3,
+                        "y": 0.3
+                    },
+                    "uuid": "e394cd9a-cb0d-4ae2-8e13-ff765cb04b8d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Bölge [GND] B.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 78.3
+                    },
+                    "uuid": "0459b718-eb02-4e9a-836a-3b0bd1d2f1f4"
+                },
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 118.3,
+                        "y": 78.3
+                    },
+                    "uuid": "c1d5d1a5-631b-458c-a1f8-a3e6ee0633b5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Bölge [GND] B.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 121.125,
+                        "y": 120.009999
+                    },
+                    "uuid": "56657254-8301-45b6-8a19-29eaee8f0708"
+                },
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 78.3
+                    },
+                    "uuid": "9e7d9cc9-54fd-4991-9247-3b73ccad509e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 182.3,
+                        "y": 78.3
+                    },
+                    "uuid": "e3ef49fd-13cf-4909-9894-06fbffbeabe6"
+                },
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 150.3,
+                        "y": 78.3
+                    },
+                    "uuid": "9e7d9cc9-54fd-4991-9247-3b73ccad509e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 182.3,
+                        "y": 78.3
+                    },
+                    "uuid": "e3ef49fd-13cf-4909-9894-06fbffbeabe6"
+                },
+                {
+                    "description": "Bölge [GND] F.Cu üzerinde, öncelik 0",
+                    "pos": {
+                        "x": 115.3,
+                        "y": 10.3
+                    },
+                    "uuid": "44d05d2f-74ba-46ba-a4f1-487157ab1957"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [Phase_V] F.Cu üzerinde, uzunluk 0.9450 mm",
+                    "pos": {
+                        "x": 169.15,
+                        "y": 91.095
+                    },
+                    "uuid": "771446bb-d151-4484-a6f8-7bfbc92650e4"
+                },
+                {
+                    "description": "Yol [Phase_V] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 86.54
+                    },
+                    "uuid": "7a132d9d-2d84-4d29-adc9-6c1d77dcd39e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_VH1] F.Cu üzerinde, uzunluk 0.4000 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 84.0
+                    },
+                    "uuid": "aa364fca-c437-404b-b602-5beb99bf9757"
+                },
+                {
+                    "description": "Yol [G_VH1] F.Cu üzerinde, uzunluk 1.0000 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 80.0
+                    },
+                    "uuid": "e1973120-a5c4-4f3c-bf05-3cfb1c2f7be7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 6.6000 mm",
+                    "pos": {
+                        "x": 127.675,
+                        "y": 135.66
+                    },
+                    "uuid": "2f6f34f3-4f21-406d-8028-d40ca920ebfb"
+                },
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 0.8050 mm",
+                    "pos": {
+                        "x": 127.85,
+                        "y": 91.095
+                    },
+                    "uuid": "5ebd75f7-2c9a-4351-a126-2ff98f9f1601"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 0.8050 mm",
+                    "pos": {
+                        "x": 127.85,
+                        "y": 91.095
+                    },
+                    "uuid": "5ebd75f7-2c9a-4351-a126-2ff98f9f1601"
+                },
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 1.1314 mm",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 80.55
+                    },
+                    "uuid": "a9ab242c-5608-42b0-aae7-0c09d7050aa7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [3V3_IO] B.Cu üzerinde, uzunluk 3.2527 mm",
+                    "pos": {
+                        "x": 152.65,
+                        "y": 57.15
+                    },
+                    "uuid": "e093c93d-9311-4e8f-abe0-4236c8acd04e"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [3V3_IO] J14",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 80.5
+                    },
+                    "uuid": "826e44ae-619a-4028-8034-629cfe15c681"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 0.0500 mm",
+                    "pos": {
+                        "x": 184.6,
+                        "y": 80.5
+                    },
+                    "uuid": "055bab23-2833-40f0-aff1-0574721bdff2"
+                },
+                {
+                    "description": "Yol [3V3_IO] F.Cu üzerinde, uzunluk 0.8050 mm",
+                    "pos": {
+                        "x": 159.85,
+                        "y": 91.095
+                    },
+                    "uuid": "3c0088e9-24b8-4907-938b-4256adc15998"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [12V] F.Cu üzerinde, uzunluk 1.6263 mm",
+                    "pos": {
+                        "x": 131.574999,
+                        "y": 123.21
+                    },
+                    "uuid": "cf546bd9-c6c0-4b16-9d1b-c8e3a7edf0aa"
+                },
+                {
+                    "description": "Yol [12V] B.Cu üzerinde, uzunluk 1.4849 mm",
+                    "pos": {
+                        "x": 139.1,
+                        "y": 97.85
+                    },
+                    "uuid": "028b5125-7f06-499e-aeea-8fc6a090c2e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [12V] F.Cu üzerinde, uzunluk 0.5000 mm",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 87.05
+                    },
+                    "uuid": "4720fc84-f3b7-46ec-b999-f9f255a84b0c"
+                },
+                {
+                    "description": "Yol [12V] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 83.04
+                    },
+                    "uuid": "9f2b8900-9abf-4607-824f-c3e0405b8c12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [12V] B.Cu üzerinde, uzunluk 1.2000 mm",
+                    "pos": {
+                        "x": 153.2,
+                        "y": 55.6
+                    },
+                    "uuid": "8c4fe9be-c56a-4c40-b991-d46c120fb002"
+                },
+                {
+                    "description": "Yol [12V] B.Cu üzerinde, uzunluk 0.2687 mm",
+                    "pos": {
+                        "x": 153.21,
+                        "y": 83.04
+                    },
+                    "uuid": "3af41bd7-399a-4d82-8dcc-fdd23b98bfd6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [12V] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 184.6,
+                        "y": 83.04
+                    },
+                    "uuid": "565cff05-bb63-4519-95a8-5fe1ea6badd2"
+                },
+                {
+                    "description": "Yol [12V] F.Cu üzerinde, uzunluk 0.5000 mm",
+                    "pos": {
+                        "x": 172.25,
+                        "y": 87.05
+                    },
+                    "uuid": "87bd1589-28bf-4156-a2c4-bf302d8589d4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [W_SNS_N] F.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 105.54
+                    },
+                    "uuid": "a533a1dd-161c-4502-a4f3-8b79986411df"
+                },
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [W_SNS_N] J25",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 105.54
+                    },
+                    "uuid": "aea8c530-5870-4536-b022-4844961333da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [W_SNS_N] J25",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 105.54
+                    },
+                    "uuid": "aea8c530-5870-4536-b022-4844961333da"
+                },
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [W_SNS_N] J43",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 64.09
+                    },
+                    "uuid": "61790b0c-2d84-4936-856a-a1ba8eb12385"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_UH1] F.Cu üzerinde, uzunluk 0.4000 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 84.0
+                    },
+                    "uuid": "ecd3fcdb-48b3-4395-8599-2f34d1f8d27f"
+                },
+                {
+                    "description": "Yol [G_UH1] F.Cu üzerinde, uzunluk 1.0000 mm",
+                    "pos": {
+                        "x": 132.1,
+                        "y": 80.0
+                    },
+                    "uuid": "94375eba-c8b6-4bcf-b887-be215caa03c7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [Phase_U] F.Cu üzerinde, uzunluk 0.9450 mm",
+                    "pos": {
+                        "x": 137.15,
+                        "y": 91.095
+                    },
+                    "uuid": "3e8e0bb4-ceea-43c7-b439-92828a58a937"
+                },
+                {
+                    "description": "Yol [Phase_U] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 86.54
+                    },
+                    "uuid": "12803af6-06a1-445b-bc37-9bcbee6406c2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [Phase_W] F.Cu üzerinde, uzunluk 0.9450 mm",
+                    "pos": {
+                        "x": 201.15,
+                        "y": 91.095
+                    },
+                    "uuid": "dcaf6019-7094-4d98-aac9-b8610d885346"
+                },
+                {
+                    "description": "Yol [Phase_W] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 86.54
+                    },
+                    "uuid": "22cd274c-8986-42dd-b137-ff0458f7e1ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_UL2] B.Cu üzerinde, uzunluk 0.1200 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 98.58
+                    },
+                    "uuid": "78ade864-32dc-48d1-92bf-3f4743b0244b"
+                },
+                {
+                    "description": "Yol [G_UL2] F.Cu üzerinde, uzunluk 1.0500 mm",
+                    "pos": {
+                        "x": 132.1,
+                        "y": 104.2
+                    },
+                    "uuid": "b39482c6-bc5f-4c9f-84ec-69c057daf5c0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "3'in Delik İçi Kaplamalı Geçit pedi [G_VL_IN] J39",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 54.229999
+                    },
+                    "uuid": "b1fc40e4-6831-46d7-bf5f-9f69f4f4cdf7"
+                },
+                {
+                    "description": "Yol [G_VL_IN] F.Cu üzerinde, uzunluk 0.2758 mm",
+                    "pos": {
+                        "x": 159.045,
+                        "y": 94.905
+                    },
+                    "uuid": "d46ffe24-4a38-4c93-81a0-d0d406df90fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_WL1] F.Cu üzerinde, uzunluk 0.4000 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 93.5
+                    },
+                    "uuid": "dd17738c-f829-4b59-be2c-f7626ce67f7e"
+                },
+                {
+                    "description": "Yol [G_WL1] F.Cu üzerinde, uzunluk 1.1000 mm",
+                    "pos": {
+                        "x": 196.1,
+                        "y": 100.6
+                    },
+                    "uuid": "8057809c-c042-4533-a573-e8f17631aba4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [WSH] F.Cu üzerinde, uzunluk 0.9250 mm",
+                    "pos": {
+                        "x": 201.15,
+                        "y": 96.175
+                    },
+                    "uuid": "1868d7f5-17c3-4726-a11d-e10858d38fb9"
+                },
+                {
+                    "description": "Yol [WSH] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 96.04
+                    },
+                    "uuid": "5b68217a-9c08-45b7-801d-05495c3af0ee"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_WL2] B.Cu üzerinde, uzunluk 0.1200 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 98.58
+                    },
+                    "uuid": "af945020-6e29-4294-9f55-b21423da5b69"
+                },
+                {
+                    "description": "Yol [G_WL2] F.Cu üzerinde, uzunluk 1.0500 mm",
+                    "pos": {
+                        "x": 196.1,
+                        "y": 104.2
+                    },
+                    "uuid": "07594752-15af-4c07-a85a-488d951f2bba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_WH1] F.Cu üzerinde, uzunluk 0.4000 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 84.0
+                    },
+                    "uuid": "1d325555-1ddc-42e6-aed1-41407c9a21d6"
+                },
+                {
+                    "description": "Yol [G_WH1] F.Cu üzerinde, uzunluk 1.0000 mm",
+                    "pos": {
+                        "x": 196.1,
+                        "y": 80.0
+                    },
+                    "uuid": "d3af5bef-74ed-4ff5-bf7e-26597186fecf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_WH2] F.Cu üzerinde, uzunluk 0.8000 mm",
+                    "pos": {
+                        "x": 196.1,
+                        "y": 83.6
+                    },
+                    "uuid": "c46dc4fd-b0d1-4e6e-986a-aa9b437aabfb"
+                },
+                {
+                    "description": "Yol [G_WH2] B.Cu üzerinde, uzunluk 0.2800 mm",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 89.08
+                    },
+                    "uuid": "b9752d1f-a806-4088-9942-510593eea44d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [U_SNS_P] J15",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 103.0
+                    },
+                    "uuid": "f6bf74ac-59c5-465d-bc59-70d850c47474"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [U_SNS_P] J37",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 61.55
+                    },
+                    "uuid": "0242ca76-eaf8-4f96-8c1b-72a6fb7d50e3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [U_SNS_P] J15",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 103.0
+                    },
+                    "uuid": "f6bf74ac-59c5-465d-bc59-70d850c47474"
+                },
+                {
+                    "description": "Yol [U_SNS_P] F.Cu üzerinde, uzunluk 0.3000 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 103.0
+                    },
+                    "uuid": "5b76d79c-8e9b-4216-b67c-4d67c51e05b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [U_SNS_N] J15",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 105.54
+                    },
+                    "uuid": "5ad62207-1a75-41b1-9d3c-a48ea743ad03"
+                },
+                {
+                    "description": "Yol [U_SNS_N] F.Cu üzerinde, uzunluk 0.1100 mm",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 64.09
+                    },
+                    "uuid": "6cc4e3f8-3f63-4e05-b484-1c64e78f6db7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [U_SNS_N] J15",
+                    "pos": {
+                        "x": 144.5,
+                        "y": 105.54
+                    },
+                    "uuid": "5ad62207-1a75-41b1-9d3c-a48ea743ad03"
+                },
+                {
+                    "description": "Yol [U_SNS_N] F.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 105.54
+                    },
+                    "uuid": "4d501423-573a-4d54-b550-384e15868d84"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_VL1] F.Cu üzerinde, uzunluk 0.4000 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 93.5
+                    },
+                    "uuid": "ae0a0ab3-ce99-4047-b1d4-eb282fc31f25"
+                },
+                {
+                    "description": "Yol [G_VL1] F.Cu üzerinde, uzunluk 1.1000 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 100.6
+                    },
+                    "uuid": "2796e5b5-9331-4ec6-9204-8074708839de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [VSH] F.Cu üzerinde, uzunluk 0.9250 mm",
+                    "pos": {
+                        "x": 169.15,
+                        "y": 96.175
+                    },
+                    "uuid": "2b9d4a69-5ad5-40dc-8ffd-09d19c5bb7c5"
+                },
+                {
+                    "description": "Yol [VSH] B.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 96.04
+                    },
+                    "uuid": "45452cf1-5d4e-4c80-9ea2-4eaa02ac3f26"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_VL2] B.Cu üzerinde, uzunluk 0.7071 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 98.7
+                    },
+                    "uuid": "64456a6b-644b-4442-9ab0-45b4b4d98a89"
+                },
+                {
+                    "description": "Yol [G_VL2] F.Cu üzerinde, uzunluk 1.0500 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 104.2
+                    },
+                    "uuid": "f4defb8b-b36a-4dd3-a913-56a5c7f1b6f5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2 için [G_UH2] D23 ayak F.Cu",
+                    "pos": {
+                        "x": 132.1,
+                        "y": 83.6
+                    },
+                    "uuid": "b9fab0d4-c179-4c04-88c9-6c329a597911"
+                },
+                {
+                    "description": "Yol [G_UH2] B.Cu üzerinde, uzunluk 0.2800 mm",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 89.08
+                    },
+                    "uuid": "cae136e8-3250-4a9f-bc82-6ce86d95115d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_VH2] F.Cu üzerinde, uzunluk 0.8000 mm",
+                    "pos": {
+                        "x": 164.1,
+                        "y": 83.6
+                    },
+                    "uuid": "c1847088-cf55-4958-9474-3f90e2afe192"
+                },
+                {
+                    "description": "Yol [G_VH2] B.Cu üzerinde, uzunluk 0.2800 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 89.08
+                    },
+                    "uuid": "36bfdcb4-6583-4804-9d66-bcf0f743e2ff"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [IN181_IFout] F.Cu üzerinde, uzunluk 0.4200 mm",
+                    "pos": {
+                        "x": 161.38,
+                        "y": 53.09
+                    },
+                    "uuid": "b9b23158-cedc-436e-9d4f-5903f24d1f66"
+                },
+                {
+                    "description": "1 için [IN181_IFout] R93 ayak F.Cu",
+                    "pos": {
+                        "x": 191.015,
+                        "y": 128.05
+                    },
+                    "uuid": "77341acd-5456-401d-98b3-5b5cf7992595"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [primer_1_H] F.Cu üzerinde, uzunluk 0.3323 mm",
+                    "pos": {
+                        "x": 127.39,
+                        "y": 137.075
+                    },
+                    "uuid": "a457dcbe-0321-4513-b16b-7d4af0b24acb"
+                },
+                {
+                    "description": "Yol [primer_1_H] F.Cu üzerinde, uzunluk 0.1200 mm",
+                    "pos": {
+                        "x": 163.92,
+                        "y": 50.55
+                    },
+                    "uuid": "4d0846cc-2008-4827-b0b1-2272ced5f464"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "8'in Delik İçi Kaplamalı Geçit pedi [primer_1_L] J48",
+                    "pos": {
+                        "x": 163.92,
+                        "y": 53.09
+                    },
+                    "uuid": "152a0106-d359-4f8d-9507-aecab8e533f2"
+                },
+                {
+                    "description": "Yol [primer_1_L] F.Cu üzerinde, uzunluk 0.4172 mm",
+                    "pos": {
+                        "x": 127.28,
+                        "y": 139.615
+                    },
+                    "uuid": "1654e403-10ad-4ee7-82c4-d41508a95a97"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "9'in Delik İçi Kaplamalı Geçit pedi [primer_2_H] J48",
+                    "pos": {
+                        "x": 166.46,
+                        "y": 50.55
+                    },
+                    "uuid": "664cd996-70a9-43bd-a76b-52f39117d95d"
+                },
+                {
+                    "description": "Yol [primer_2_H] F.Cu üzerinde, uzunluk 0.4150 mm",
+                    "pos": {
+                        "x": 158.675,
+                        "y": 137.075
+                    },
+                    "uuid": "ca460681-3830-4c39-8075-a3fdd306110f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "10'in Delik İçi Kaplamalı Geçit pedi [primer_2_L] J48",
+                    "pos": {
+                        "x": 166.46,
+                        "y": 53.09
+                    },
+                    "uuid": "580d1897-ef8c-405a-8abf-9ddc221a168c"
+                },
+                {
+                    "description": "Yol [primer_2_L] F.Cu üzerinde, uzunluk 0.4050 mm",
+                    "pos": {
+                        "x": 158.675,
+                        "y": 139.615
+                    },
+                    "uuid": "68dd5b72-aa88-4532-a6fa-5617dca1e00c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [SD] F.Cu üzerinde, uzunluk 11.6500 mm",
+                    "pos": {
+                        "x": 121.35,
+                        "y": 52.05
+                    },
+                    "uuid": "ae739a6f-cfbb-4120-9578-2fdc546faa66"
+                },
+                {
+                    "description": "Yol [SD] F.Cu üzerinde, uzunluk 0.4384 mm",
+                    "pos": {
+                        "x": 121.04,
+                        "y": 93.14
+                    },
+                    "uuid": "8c0942fd-fe9a-4e4a-b4e6-8a3ddec17002"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [SD] B.Cu üzerinde, uzunluk 8.5560 mm",
+                    "pos": {
+                        "x": 148.575,
+                        "y": 136.96
+                    },
+                    "uuid": "1d8663dd-b23b-4ff6-a915-24730e0ed094"
+                },
+                {
+                    "description": "Yol [SD] F.Cu üzerinde, uzunluk 0.4384 mm",
+                    "pos": {
+                        "x": 153.04,
+                        "y": 93.14
+                    },
+                    "uuid": "bd6d3ca8-f96a-4617-94de-39b9548e525e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [SD] F.Cu üzerinde, uzunluk 0.4400 mm",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 93.14
+                    },
+                    "uuid": "0800cc61-119c-4b0b-9d79-2444da5bcf22"
+                },
+                {
+                    "description": "13 için [SD] U1 ayak F.Cu",
+                    "pos": {
+                        "x": 127.85,
+                        "y": 93.635
+                    },
+                    "uuid": "05a07561-0419-44c9-ab9f-c1386a67c04f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "13 için [SD] U2 ayak F.Cu",
+                    "pos": {
+                        "x": 159.85,
+                        "y": 93.635
+                    },
+                    "uuid": "4de9f468-b5e0-4c30-8287-d7a215362aa7"
+                },
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [SD] J24",
+                    "pos": {
+                        "x": 184.6,
+                        "y": 93.14
+                    },
+                    "uuid": "74346578-ba3b-4e24-800e-15fd2ed8bdf6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [G_WH_IN] J42",
+                    "pos": {
+                        "x": 184.6,
+                        "y": 49.149999
+                    },
+                    "uuid": "1ab9d520-69cf-4169-b446-a31a1347006a"
+                },
+                {
+                    "description": "Yol [G_WH_IN] F.Cu üzerinde, uzunluk 3.2001 mm",
+                    "pos": {
+                        "x": 188.6,
+                        "y": 90.025
+                    },
+                    "uuid": "598c7597-65d4-4bad-a110-8ef765c81427"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [V_SNS_P] J40",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 61.55
+                    },
+                    "uuid": "9639c335-2b57-4fcd-9d2b-04a0c009c1e2"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [V_SNS_P] J16",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 103.0
+                    },
+                    "uuid": "8ff130d3-aa51-4f02-bef6-25c528d2c1ab"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [V_SNS_P] J16",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 103.0
+                    },
+                    "uuid": "8ff130d3-aa51-4f02-bef6-25c528d2c1ab"
+                },
+                {
+                    "description": "Yol [V_SNS_P] F.Cu üzerinde, uzunluk 0.3000 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 103.0
+                    },
+                    "uuid": "fdd53a3c-6ec3-40ed-9c4d-3415cb855628"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [V_SNS_N] J16",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 105.54
+                    },
+                    "uuid": "0a49888a-500c-4e5a-b97f-75016f931969"
+                },
+                {
+                    "description": "Yol [V_SNS_N] F.Cu üzerinde, uzunluk 0.5400 mm",
+                    "pos": {
+                        "x": 58.5,
+                        "y": 105.54
+                    },
+                    "uuid": "b0508157-1323-4874-bdb5-9e9d9a8e290d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [V_SNS_N] F.Cu üzerinde, uzunluk 14.2836 mm",
+                    "pos": {
+                        "x": 187.4,
+                        "y": 54.0
+                    },
+                    "uuid": "40efa5cc-1795-4c5f-b0e7-469fde485b2a"
+                },
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [V_SNS_N] J16",
+                    "pos": {
+                        "x": 176.5,
+                        "y": 105.54
+                    },
+                    "uuid": "0a49888a-500c-4e5a-b97f-75016f931969"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_UH_IN] F.Cu üzerinde, uzunluk 1.0607 mm",
+                    "pos": {
+                        "x": 120.650001,
+                        "y": 49.149999
+                    },
+                    "uuid": "8ae4565e-43b4-4bd5-b12b-e843eaebd820"
+                },
+                {
+                    "description": "Yol [G_UH_IN] F.Cu üzerinde, uzunluk 3.2001 mm",
+                    "pos": {
+                        "x": 124.6,
+                        "y": 90.025
+                    },
+                    "uuid": "9c8d141b-b994-472e-8716-dcd2aa0ba6a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_UL_IN] F.Cu üzerinde, uzunluk 7.4000 mm",
+                    "pos": {
+                        "x": 128.699999,
+                        "y": 53.8
+                    },
+                    "uuid": "3d786042-788d-440a-977c-b48fbda8a153"
+                },
+                {
+                    "description": "14 için [G_UL_IN] U1 ayak F.Cu",
+                    "pos": {
+                        "x": 127.85,
+                        "y": 94.905
+                    },
+                    "uuid": "7c053585-af33-4591-8dc8-a3a57ed8cc97"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_WL_IN] F.Cu üzerinde, uzunluk 0.2758 mm",
+                    "pos": {
+                        "x": 191.045,
+                        "y": 94.905
+                    },
+                    "uuid": "f89fda3e-2f28-4665-81dc-ef81d380c24c"
+                },
+                {
+                    "description": "3'in Delik İçi Kaplamalı Geçit pedi [G_WL_IN] J42",
+                    "pos": {
+                        "x": 184.6,
+                        "y": 54.229999
+                    },
+                    "uuid": "fb665703-696c-4dbd-90f0-decd72e91fe9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [G_VH_IN] F.Cu üzerinde, uzunluk 0.7778 mm",
+                    "pos": {
+                        "x": 152.85,
+                        "y": 90.6
+                    },
+                    "uuid": "aac0930d-de77-43e2-b16f-48fbb418551e"
+                },
+                {
+                    "description": "Yol [G_VH_IN] F.Cu üzerinde, uzunluk 0.1500 mm",
+                    "pos": {
+                        "x": 152.6,
+                        "y": 49.149999
+                    },
+                    "uuid": "5eecf69e-444d-4db1-bfc3-be529ca1e76a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [W_SNS_P] J34",
+                    "pos": {
+                        "x": 90.5,
+                        "y": 103.0
+                    },
+                    "uuid": "d70d9cb5-3163-40fe-8002-53f64fc27028"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [W_SNS_P] J25",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 103.0
+                    },
+                    "uuid": "71e59a95-28c6-4c5b-87f1-464e904c77b1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [W_SNS_P] J25",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 103.0
+                    },
+                    "uuid": "71e59a95-28c6-4c5b-87f1-464e904c77b1"
+                },
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [W_SNS_P] J43",
+                    "pos": {
+                        "x": 208.5,
+                        "y": 61.55
+                    },
+                    "uuid": "a17fc5ef-5a77-42a7-8313-cc5cba66770a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "1'in Delik İçi Kaplamalı Geçit pedi [G_UL1] J27",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 93.5
+                    },
+                    "uuid": "dc73476a-c6ab-410d-a8b6-0e39dc2b1ccd"
+                },
+                {
+                    "description": "Yol [G_UL1] F.Cu üzerinde, uzunluk 1.1000 mm",
+                    "pos": {
+                        "x": 132.1,
+                        "y": 100.6
+                    },
+                    "uuid": "5312b6b9-d006-44e2-bfac-4ba3e73fa126"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Yol [USH] F.Cu üzerinde, uzunluk 0.9250 mm",
+                    "pos": {
+                        "x": 137.15,
+                        "y": 96.175
+                    },
+                    "uuid": "4cf6eba0-981d-4dda-8301-52af6f50eb16"
+                },
+                {
+                    "description": "2'in Delik İçi Kaplamalı Geçit pedi [USH] J27",
+                    "pos": {
+                        "x": 26.5,
+                        "y": 96.04
+                    },
+                    "uuid": "e15ede62-40cb-422e-845d-f99c811f6d8e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Bölüm Edge.Cuts üzerinde",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 78.0
+                    },
+                    "uuid": "e0f0d8a1-2431-451f-bf67-3d66753bae99"
+                },
+                {
+                    "description": "J10 referans alanı",
+                    "pos": {
+                        "x": 120.6,
+                        "y": 78.12
+                    },
+                    "uuid": "7c6bffdc-a0c5-4869-be00-e2b6489a6fec"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Bölüm Edge.Cuts üzerinde",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "17520540-2691-4e40-870d-70bb7c816c4c"
+                },
+                {
+                    "description": "H1 referans alanı",
+                    "pos": {
+                        "x": 3.7,
+                        "y": -0.45
+                    },
+                    "uuid": "cfefdaca-685f-470b-95e2-b8f95bc3b62b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "items": [
+                {
+                    "description": "Bölüm Edge.Cuts üzerinde",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 10.0
+                    },
+                    "uuid": "78fb1c15-96bf-464f-b64d-76a6ae65d305"
+                },
+                {
+                    "description": "J47 referans alanı",
+                    "pos": {
+                        "x": 121.43,
+                        "y": 9.87
+                    },
+                    "uuid": "61ec0143-4a19-4afa-be9f-518cb25c4654"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "'CSD19538Q2' ayak izi, 'CSD19538Q2' kütüphanesindeki kopyasıyla eşleşmiyor",
+            "items": [
+                {
+                    "description": "Ayak İzi Q13",
+                    "pos": {
+                        "x": 132.9555,
+                        "y": 38.52
+                    },
+                    "uuid": "17070a3a-e67a-4c0f-b5b9-f45a4674add3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "'CSD19538Q2' ayak izi, 'CSD19538Q2' kütüphanesindeki kopyasıyla eşleşmiyor",
+            "items": [
+                {
+                    "description": "Ayak İzi Q14",
+                    "pos": {
+                        "x": 129.6855,
+                        "y": 38.52
+                    },
+                    "uuid": "6bef0273-e6ad-4fda-bc7e-eea79c620a64"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "'USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal' ayak izi, 'Connector_USB' kütüphanesindeki kopyasıyla eşleşmiyor",
+            "items": [
+                {
+                    "description": "Ayak İzi J23",
+                    "pos": {
+                        "x": 210.548,
+                        "y": 33.205
+                    },
+                    "uuid": "977a8a39-b759-4085-8f98-4743b072ae9d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

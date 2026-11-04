@@ -1,0 +1,38 @@
+(version 1)
+# Guc karti (Katman 1): 2 katman, yuksek akim yollari lehim / bakir tel ile takviye edilecek.
+# MOSFET'ler IRFB4110PBF (TO-220), kartin altinda, tab sogutucu levhaya yalitkan pedle basar.
+(rule "GucKarti_min_iz_1.5mm"
+  (condition "A.Type == 'Track' && A.intersectsArea('GUC_KARTI')")
+  (constraint track_width (min 1.5mm)))
+(rule "GucKarti_min_via_1mm_delik"
+  (condition "A.Type == 'Via' && A.intersectsArea('GUC_KARTI')")
+  (constraint hole_size (min 1.0mm))
+  (constraint via_diameter (min 1.8mm)))
+# Dokum ve izler icin 0.6 mm (IPC-2221B B2, takviyeli bakir); pad-pad araliklari footprint'e birakildi
+(rule "GucKarti_aciklik_0.6mm"
+  (condition "(A.Type == 'Zone' || A.Type == 'Track' || B.Type == 'Zone' || B.Type == 'Track') && A.intersectsArea('GUC_KARTI') && B.intersectsArea('GUC_KARTI')")
+  (constraint clearance (min 0.6mm)))
+# Montaj delikleri H1-H8: metal ara parca + metal pul -> delik kenarindan 2.5 mm (M3 pul capi 7 mm) icinde bakir olmasin
+(rule "GucKarti_vida_bakir_boslugu_2.5mm"
+  (condition "B.Pad_Type == 'NPTH, mechanical' && B.intersectsArea('GUC_KARTI') && !B.memberOfFootprint('Q*')")
+  (constraint hole_clearance (min 2.5mm)))
+# TO-220 tab vidalari (Q1-Q12): yalitkan montaj kiti ZORUNLU (naylon omuzlu burc + naylon pul, vida basinin altinda).
+# Bakir naylon pulun altinda kalabilir; vida govdesi delik duvarina degebilecegi icin delik kenarindan 1.0 mm.
+(rule "GucKarti_TO220_vida_1.0mm"
+  (condition "B.Pad_Type == 'NPTH, mechanical' && B.memberOfFootprint('Q*')")
+  (constraint hole_clearance (min 1.0mm)))
+# M5 pabuc pad'leri (J1-J5): kablo pabucu ust yuzde (dil yonu belirsiz) -> F.Cu'da 3.5 mm;
+# alt yuzde yalnizca M5 somun + pul (pad icinde kalir) -> B.Cu'da 1.0 mm
+(rule "GucKarti_pabuc_boslugu_3.5mm_ust"
+  (layer "F.Cu")
+  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5')")
+  (constraint clearance (min 3.5mm)))
+(rule "GucKarti_pabuc_boslugu_1.0mm_alt"
+  (layer "B.Cu")
+  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5')")
+  (constraint clearance (min 1.0mm)))
+
+# Kontrol karti: GND dokumu 0.25 mm aciklikla (lojik / 12 V); VBAT (60 V) ile dokum arasi 0.5 mm korunur
+(rule "VBAT_dokum_0.5mm"
+  (condition "A.NetName == 'VBAT' && B.Type == 'Zone' && B.NetName != 'VBAT'")
+  (constraint clearance (min 0.5mm)))

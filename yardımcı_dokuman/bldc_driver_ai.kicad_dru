@@ -1,0 +1,12 @@
+(version 1)
+# Guc karti (Katman 1) evde uretilecek: yalniz bu kart icin
+(rule "GucKarti_min_iz_1.5mm"
+  (condition "A.Type == 'Track' && A.intersectsArea('GUC_KARTI')")
+  (constraint track_width (min 1.5mm)))
+(rule "GucKarti_min_via_1mm_delik"
+  (condition "A.Type == 'Via' && A.intersectsArea('GUC_KARTI')")
+  (constraint hole_size (min 1.0mm))
+  (constraint via_diameter (min 1.8mm)))
+(rule "GucKarti_aciklik_0.2mm"
+  (condition "A.intersectsArea('GUC_KARTI') && B.intersectsArea('GUC_KARTI')")
+  (constraint clearance (min 0.2mm)))

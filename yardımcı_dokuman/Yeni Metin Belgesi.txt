@@ -186,3 +186,20 @@ bağlanmaz, bağımsız güç bölgelerini besler:
    parazitik endüktansı önlemek için sürücü lojik şasesi ve güç şasesi yıldız topolojiyle bağlanmalıdır.
 4. EESM HF Sürüşü: IR2110 bootstrap kondansatörlerinin boşalmaması için uyartım H-köprüsü 
    en az 10 kHz - 50 kHz frekansında anahtarlanmalıdır.
+5. Katman Sayısı ve Lehim Takviyesi: Tüm kartlar 2 katmanlı (F.Cu / B.Cu) üretilecektir.
+   Yüksek akım yolları (VBAT, GND, Phase_U/V/W, xSH ve şönt dönüşleri, lug bağlantıları)
+   bakır kalınlığı yetmediği için üzerlerine lehim takviyesi yapılarak güçlendirilecektir.
+   Bunun için:
+   a) Bu yollar üzerinde lehim maskesi açıklığı (F.Mask / B.Mask penceresi) bırakılmalı,
+      pencere yolun kenarından ~0.3 mm içeride bitmeli (komşu nete lehim taşmasın).
+   b) Takviye yalnızca lehimle değil, gerekirse yol boyunca lehimlenen bakır tel/şerit
+      (ör. 1.5-2.5 mm² çıplak bakır) ile yapılmalıdır; kalın lehim tek başına bakırın
+      ~1/10 iletkenliğindedir.
+   c) Takviyeli yollar arası boşluk lehim kabarması ve köprüleşmeye karşı en az 1 mm
+      olmalı; pencere kenarlarında farklı potansiyelli bakır bulunmamalıdır.
+   d) Katmanlar arası akım geçişleri kaplamalı via dizileriyle (veya evde üretimde bakır
+      tel perçinle) sağlanmalı, takviyeli yolun her iki katmanı da paralel taşıyıcı olarak
+      kullanılmalıdır.
+   e) Lehim takviyesi akım taşıma kapasitesini artırır ancak MOSFET termal yolunu ve
+      komütasyon döngü endüktansını iyileştirmez; yarım köprü başına yerel seramik
+      kondansatörler ve drain altı termal via kuralları (madde 2) ayrıca uygulanmalıdır.

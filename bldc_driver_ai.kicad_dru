@@ -25,11 +25,11 @@
 # alt yuzde yalnizca M5 somun + pul (pad icinde kalir) -> B.Cu'da 1.0 mm
 (rule "GucKarti_pabuc_boslugu_3.5mm_ust"
   (layer "F.Cu")
-  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5')")
+  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5') || B.memberOfFootprint('J52') || B.memberOfFootprint('J53')")
   (constraint clearance (min 3.5mm)))
 (rule "GucKarti_pabuc_boslugu_1.0mm_alt"
   (layer "B.Cu")
-  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5')")
+  (condition "B.memberOfFootprint('J1') || B.memberOfFootprint('J2') || B.memberOfFootprint('J3') || B.memberOfFootprint('J4') || B.memberOfFootprint('J5') || B.memberOfFootprint('J52') || B.memberOfFootprint('J53')")
   (constraint clearance (min 1.0mm)))
 
 # Kontrol karti: GND dokumu 0.25 mm aciklikla (lojik / 12 V); VBAT (60 V) ile dokum arasi 0.5 mm korunur

@@ -2112,7 +2112,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "INA181:INA181"
+			(property "Footprint" "bldc_proje:INA181_LP"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2324,7 +2324,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TLV9001:TLV9001"
+			(property "Footprint" "bldc_proje:TLV9001_LP"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6228,7 +6228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TLV9001:TLV9001"
+		(property "Footprint" "bldc_proje:TLV9001_LP"
 			(at 346.71 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -6598,7 +6598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA181:INA181"
+		(property "Footprint" "bldc_proje:INA181_LP"
 			(at 422.91 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -11518,105 +11518,6 @@
 			(justify right bottom)
 		)
 		(uuid "8da46609-cd5d-4ffa-93dd-73a5c89db9ad")
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 679.45 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4a1463ec-18ce-4a0e-9c62-e7c3b5995afd")
-		(property "Reference" "NT9"
-			(at 679.45 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie"
-			(at 679.45 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
-			(at 679.45 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 679.45 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 679.45 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "438cc45d-b7dd-49e6-b46c-ff2838e84419")
-		)
-		(pin "2"
-			(uuid "4200159b-c033-4ae2-960d-055bb042dc80")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/7fd19f06-f728-41b1-a67a-bf9caffb6e1d"
-					(reference "NT9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(label "PGND_EESM"
-		(at 676.9100000000001 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "30855009-0568-42b8-a91a-73dfa7c9a2c5")
-	)
-	(global_label "GND"
-		(at 681.99 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "79805de4-ec81-47c8-8110-cf4c59b6933a")
 	)
 	(sheet_instances
 		(path "/"

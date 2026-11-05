@@ -1,0 +1,265 @@
+(footprint "TJA1051_LP"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TJA1051 IC_GENERIC - SOIC-8_3.9x4.9mm_P1.27mm")
+	(tags "SOIC-8_3.9x4.9mm_P1.27mm Integrated_Circuit IC_GENERIC")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "25ff4e35-607d-4ac4-b57c-1c0e230fb12d")
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TJA1051_LP"
+		(at 0 4.07 0)
+		(layer "F.Fab")
+		(uuid "e4ace12c-fcf8-4148-a0ff-62388ccfead0")
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "TJA1051.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ae33adb-cf5e-46c7-bebc-b26b64bf6ada")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "TJA1051 IC_GENERIC"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e19bdbee-a3ca-4443-a809-974e446e92b5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property ki_fp_filters "*SOIC-8_3.9x4.9mm_P1.27mm* *TJA1051* kutuphane:*")
+	(sheetname "/")
+	(sheetfile "bldc_driver.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.95 -2.6)
+		(end 1.95 -2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b34f6a6-3a18-48a0-bf4d-1de8437fe55a")
+	)
+	(fp_line
+		(start -1.95 2.6)
+		(end 1.95 2.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "028ffd17-2179-486c-b7dc-58cd9ca1c143")
+	)
+	(fp_circle
+		(center -3.35 -1.91)
+		(end -3.21 -1.91)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f5bf0521-8ee3-4a6f-a8b0-b715d236855e")
+	)
+	(fp_poly
+		(pts
+			(xy 2.25 -2.5) (xy 3.65 -2.5) (xy 3.65 2.5) (xy 2.25 2.5) (xy 2.25 2.75) (xy -2.25 2.75) (xy -2.25 2.5)
+			(xy -3.65 2.5) (xy -3.65 -2.5) (xy -2.25 -2.5) (xy -2.25 -2.75) (xy 2.25 -2.75)
+		)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2240b284-5f85-4eab-98a8-e34e4c7bb85d")
+	)
+	(fp_line
+		(start -1.95 -1.84)
+		(end -1.34 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe0bf962-5310-46d5-aace-945b73026ff4")
+	)
+	(fp_line
+		(start -1.95 2.45)
+		(end -1.95 -1.84)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2b914024-298b-4ece-9839-4aa0829078df")
+	)
+	(fp_line
+		(start -1.34 -2.45)
+		(end 1.95 -2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e39f5108-d38c-475c-95a0-7508e65fdf88")
+	)
+	(fp_line
+		(start 1.95 -2.45)
+		(end 1.95 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2570840e-3df8-481f-82e9-aaf5bbfb3de6")
+	)
+	(fp_line
+		(start 1.95 2.45)
+		(end -1.95 2.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "97e21aac-d4b9-4a82-802b-e9451ea4b644")
+	)
+	(fp_circle
+		(center -1.36 -1.72)
+		(end -1.11 -1.72)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "78075853-6818-4f1b-8fec-4071fe4e135f")
+	)
+	(pad "1" smd roundrect
+		(at -2.5 -1.91)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "6fc79637-8742-4f78-af15-012f4ff29923")
+	)
+	(pad "2" smd roundrect
+		(at -2.5 -0.64)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8628d22c-60ff-49ff-b224-ca9385ce1ba2")
+	)
+	(pad "3" smd roundrect
+		(at -2.5 0.64)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "607d2285-2928-4cf7-a9a9-e8d91dd05f2a")
+	)
+	(pad "4" smd roundrect
+		(at -2.5 1.91)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "cdc61637-647d-4fa7-84fc-a20ebeb545d1")
+	)
+	(pad "5" smd roundrect
+		(at 2.5 1.91)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "306fb61b-e91e-4c88-b227-107b3fc923f5")
+	)
+	(pad "6" smd roundrect
+		(at 2.5 0.64)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "f3ffd20d-cd63-4f98-a10b-6169e729831a")
+	)
+	(pad "7" smd roundrect
+		(at 2.5 -0.64)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "435d0d5e-f992-4787-ba16-dfbde462548a")
+	)
+	(pad "8" smd roundrect
+		(at 2.5 -1.91)
+		(size 1.8 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b27e7d3e-1cac-4aad-9982-c176a7ae302c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/TJA1051.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KICAD10_3DMODEL_DIR}/kutuphane/TJA1051.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "C:/Users/tekca/Documents/KiCad/10.0/kutuphane/kutuphane.pretty/TJA1051.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "TJA1051.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

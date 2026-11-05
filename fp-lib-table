@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "bldc_proje") (type "KiCad") (uri "${KIPRJMOD}/bldc_proje.pretty") (options "") (descr "Proje footprintleri (Faz 7: DC-link film kondansator)"))
+)

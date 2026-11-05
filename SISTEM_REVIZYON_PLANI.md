@@ -193,7 +193,7 @@ Firmware: `JTAGEN = OFF` zorunlu (TDI/TDO/TMS/TCK pinleri PWM2H, W akımı ve PW
 | Akım sınırı (tipik) | (R4 · 96 µA) / Rds(on) − ΔI/2, R4 = 5.6k, Rds ≈ 0.20 Ω | ≈ 2.2 A (tepe ≈ 2.7 A) |
 | Akım sınırı (en kötü) | (5.6k · 80 µA − 15 mV) / 0.33 Ω − ΔI/2 | ≈ 0.84 A (12 V yükü ≈ 0.2–0.4 A) ✓ |
 | Ripple enjeksiyonu | VO · (1 − D) / (C12 · R5 · fSW) = 12 · 0.75 / (4.7 nF · 100k · 300 kHz) | **64 mV** (hedef 20–100 mV) ✓ |
-| Başlama gerilimi (EN) | V_EN,th · (R98 + R99) / R99 = V_EN,th · 490 / 20 | ≈ 29 V (V_EN,th ≈ 1.2 V varsayımı, **doğrulanacak**) |
+| Başlama gerilimi (EN) | V_EN,high(min) · (R98 + R99) / R99 = 1.6 V · 497 / 27 (R99 = 27k, Faz 7) | garanti ≈ 29.5 V (MIC2128 EN yüksek eşiği en az 1.6 V) |
 | FET'ler | IRLML0100TRPBF (100 V, SOT-23, Rds(on) 4.5 V'ta tanımlı, Qg ≈ 2.5 nC) | İletim kaybı < 60 mW |
 | Bobin | 33 µH ekranlı, Isat ≥ 3 A (Bourns SRR1260-330M) | Isat **doğrulanacak** |
 | VBAT / SW kapasitörleri | C9, C11: 100 nF / 100 V X7R 0805 (CL21B104KCFNNNE) | ✓ |
@@ -493,9 +493,80 @@ Tüm entegrelerin pin → net eşleşmeleri datasheet'lerle karşılaştırıld�
 - Deneme geri alındı. Proje eski footprint'lerle tutarlı ve DRC temiz durumda; deneme `yedek_faz7/*_footprint_denemesi.*` olarak saklandı.
 - **Gereken:** bu 12 parçanın çevresinde elle, parça parça yeniden yerleşim ve yönlendirme. Ya da kart küçültme çalışmasıyla birlikte ele alınması.
 
+## 2.15 Dış inceleme düzeltmeleri ve kart dışı DC-link film bankı (5 Kasım 2026)
+
+### 2.15.1 Dış incelemenin bulguları (hepsi netlist/PCB üzerinde doğrulandı)
+| # | Bulgu | Durum |
+|---|---|---|
+| K1 | **Şönt ölçüm hattı mekanik olarak kopuk** (K21). Güç kartı J28/J31/J34 dişi soket, gate kartı J15/J16/J25 de düz dişi soketti; gate kartının altında erkek pin yoktu. Sonuç: INA181 girişleri boşta, FOC akım ölçümü ve CMP → PCI aşırı akım kapatması çalışmaz. | **Düzeltildi:** J15/J16/J25 **stacking (uzun kuyruklu) soket** oldu (üstte 8.5 mm soket, altta ≥ 10.5 mm kuyruk; kart arası 11 mm → J28'e ≈ 6 mm girer). Footprint aynı; BOM'da ayrı satır, 3D modelde kuyruk görünür. |
+| O2 | **EESM toprak döngüsü:** PGND_EESM hem J45 kablosuyla güç toprağına hem NT9 üzerinden lojik GND'ye bağlıydı; köprü akımının bir kısmı J49'un 2.54 mm pinlerinden dönüyordu. | **Düzeltildi:** NT9 kaldırıldı. Köprü dönüşü yalnızca J45 kablosundan, lojik referans yalnızca J49 GND. IR2110 COM = IF_H ve INA181 diferansiyel olduğu için ölçüm etkilenmez. |
+| O3 | **Harici 12 V girişi (J50.1) korumasız.** | **Düzeltildi:** D43 SMAJ15A (VRWM 15 V, kıskaç 24.4 V < IR2110 VCC mutlak sınırı 25 V) J50.1–GND; F1 1812L110/33MR PTC (1.1 A) kart besleme yolunda, D42 öncesi (yeni net 12V_EXT). Bobin/besleme izleri DRC'nin izin verdiği kadar genişletildi (çoğu 0.8–1.0 mm, darboğaz 0.3–0.4 mm). 3V3 LDO'lar zaten TSR 1-2450 çıkışından (5V_SYS) besleniyor; yalnızca U21 (LDL1117S50, 20 V mutlak) 12 V'ta, kısa darbelerde F1 + ray kondansatörleriyle korunur. |
+| D4 | **Riser J46/J47 pin boyu:** kontrol kartı altı güç kartının 23.6 mm üstünde; J46 (8.5 mm soket) için plastik altında ≈ 18 mm pin gerekir. | **Düzeltildi (BOM):** J47 = 2.54 mm 2x2 erkek başlık, toplam pin boyu ≥ 25 mm. 3D modelde pin uzatıldı. |
+| — | Planın 2.9 tablosunda R99 hâlâ 20k yazıyordu (belge tutarsızlığı). | **Düzeltildi:** tabloda 27k, garanti açılış ≈ 29.5 V. |
+
+### 2.15.2 Bara kondansatörleri: kart dışı DC-link film bankı
+- **Araştırma (DigiKey, LCSC, TDK datasheet'i):** 100 V sınıfında DC-link polipropilen film yok denecek kadar az; TDK B3277x serisinin en düşük gerilimi 450 V.
+  - B32774D4226K000: 22 µF, 14.5 A, 5.4 mΩ, 22 x 36.5 x 31.5 mm.
+  - B32776G4506K000: 50 µF, 20 A, 4.3 mΩ, 28 x 42.5 x 42 mm.
+- **Neden kart dışı:** film kondansatörler 36.5–42.5 mm yüksekliğinde. Kontrol kartının altındaki boşluk 23.6 mm, kartın serbest bölgesine de yalnızca 6 x 22 µF (132 µF) sığıyordu. Bu kadarı elektrolitiklerle paralel kalınca 20–40 kHz dalgalanmanın çoğunu yine elektrolitikler taşırdı. (Kullanıcı kararı: kart dışı bank.)
+- **Seçim:** 4 x B32776G4506K000 = **200 µF / 80 A** (gereken ≈ 50 A rms; 40 kHz'te ΔV ≈ 1 V rms). J1/J2 M5 saplamalarına lamine bara çiftiyle (≤ 100 mm) bağlanır.
+- **Kart:** 42 x 470 µF/63 V kaldırıldı. 26 x 4.7 µF/100 V seramik yüksek frekans dekuplajı olarak kaldı.
+- **Sonuçlar:**
+  - **63 V gerilim payı riski ortadan kalktı.** Firmware'deki V_BUS sınırı yine de önerilir; TVS kıskacı 93.6 V, MOSFET'ler 100 V.
+  - Ön şarj τ ≈ 10 Ω x 0.26 mF ≈ 3 ms. Deşarj direnci τ ≈ 0.9 s; 1.08 W sürekli kayıp için R136–R138 büyütülebilir.
+  - **Sönümleme:** düşük ESR'li film + batarya kablosu endüktansı rezonans yapabilir. Sönümleme batarya/kablo direncine kalıyor; Faz 8 adım 4'te bara geriliminde çınlama ölçülmeli. Gerekirse banka bir adet 100 V elektrolitik (ESR'si sönümleme yapar) eklenir.
+- **Güç kartı 100 x 162 mm'den 100 x 93 mm'ye indi** (üst kenar y = 27). J1/J2 lug'ları, TVS D38/D39, deşarj dirençleri R136–R138 ve H1/H4/H5 montaj delikleri y 27–55 bandına taşındı. GND pad'leri 1.8/1.0 mm via ile alt dökümle birleştirildi. Yığındaki diğer kartlar değişmedi (kontrol kartı y ≥ 31.45'te).
+- **Doğrulama (kurallar devrede):** DRC 0 hata, 0 kart içi bağlantısız, parite 0; izlerin tamamı 0°/45°/90°. Gerber'ler, montaj ve render güncellendi.
+
+## 2.16 Land pattern düzeltmesi tamamlandı (5 Kasım 2026)
+
+**Yeni footprint'ler** (`bldc_proje.pretty`, proje `fp-lib-table`): kullanılan özel footprint'lerin kopyası. Pad numarası, yönü ve orijini aynı; pad'ler yalnızca dışa uzatıldı.
+
+| Footprint | Parçalar | Pad (önce → şimdi) | Dış kenar / bacak ucu (en büyük) |
+|---|---|---|---|
+| INA181_LP | U7, U12, U14, U18 | 1.10 mm @ ±0.75 → 1.15 mm @ ±1.175 | 1.75 / 1.5 mm |
+| TLV9001_LP | U10, U11, U13, U17 | aynı | 1.75 / 1.5 mm |
+| TJA1051_LP, ADuM1201_LP | U22, U4 | 1.55 mm @ ±2.23 → 1.8 mm @ ±2.5 | 3.4 / 3.1 mm |
+| CH340G_LP | U5 | aynı, aralık tam 1.27 mm (önce 1.26–1.28) | 3.4 / 3.1 mm |
+| MIC2128_LP | U9 | sinyal pad'leri 0.40 → 0.69 mm | gövdenin 0.35 mm dışı |
+
+**Courtyard:** KiCad standardındaki gibi gövde + 0.25 mm ile pad sıraları + 0.25 mm'nin birleşimi. Komşu pasiflerle pad aralığı 0.62–1.81 mm.
+
+**Yerleşim:** parçalar yerinde kaldı. Her parça için çevresindeki kutuda kendi netleri ve çakışan netler kesildi, dışarıdaki bakıra dokunulmadı. Ardından kutu içi pad'ler ve kesilen saplama uçları yeniden bağlandı (yeni `box` / `pt` yönlendirme görevleri). Sonuç parça başına DRC ile doğrulandı, kötüleşen parça geri alındı.
+- **Otomatik çözülenler:** U7, U10, U12, U13, U18, U5.
+- **Elle tamamlananlar:**
+  - U4: RXD_DSP gövde altı via'sıyla; TXD via'sı 0.45 mm kaydırıldı.
+  - U22: 3V3_IO koridoru 0.3 mm'ye daraltıldı; CANH, CANL ve CONT_EN yeniden yönlendirildi.
+  - U9: DL düz iniş; BUCK_EN ve BUCK_FREQ yeniden yönlendirildi.
+  - GND / GND_PC döküm adacıkları: dikiş via'sı, C145.2 → U24.2 bağlantısı, RXD'nin alt katman kısmı yeniden çizildi.
+
+**Son durum (proje klasörü, kurallar devrede):**
+- DRC 0 hata, 0 kart içi bağlantısız, parite 0; izlerin tamamı 0°/45°/90°.
+- ERC temel durumda: 4 bilinen TJA1051 pin_to_pin uyarısı.
+- Uyarılar: 5 serigrafi–kenar, 3 kütüphane farkı (J1/J2 lug pad Ø10.4, J23).
+- Temizlikte 353 kopya iz ve 4 tek katmanlı (boşta) via silindi.
+- **Gerber'ler artık siparişe uygun.**
+
+## 2.17 Modül 5: DC-link film bank kartı (5 Kasım 2026)
+
+**Neden:** 2.15'te bara kondansatörleri yalnızca BOM'un Mekanik sayfasına "kart dışı bank" olarak yazılmıştı; şematikte ve kartta yoktu. Kullanıcı kararıyla ayrı bir kart yapıldı.
+
+- **Şematik (güç sayfası):** C200–C203 = 4 x TDK B32776G4506K000 (50 µF / 450 V DC, 20 A), VBAT–GND. J52 (VBAT) ve J53 (GND) M5 bara lug'ları.
+- **Footprint:** `bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin`. 4 bacak (37.5 x 10.2 mm); her uçtaki iki bacak aynı elektrot (pad 1-1 / 2-2). Pad Ø3.2 mm, delik 1.4 mm.
+- **Kart:** 116 x 66 mm, 2 katman.
+  - Üstte tam VBAT, altta tam GND dökümü; üst üste iki düzlem düşük endüktanslı lamine bara gibi çalışır. Pad bağlantısı termal değil, tam dolgu.
+  - Güç kartının evde üretim kuralları burada da geçerli (GUC_KARTI kural alanı).
+  - J52/J53 lug kuralına eklendi: üstte 3.5 mm. Lug pad'leri Ø10.4 mm.
+  - M3 montaj delikleri H9–H12.
+- **Montaj:** bank, güç kartının sağ yanında ve aynı düzlemde. J52/J53, J1/J2 ile aynı hizada ve 14 mm aralıkta; iki kısa (≈ 25 mm) M5 delikli bakır bara ile bağlanır. Aradaki 0.1–0.2 mm yalıtımla üst üste konulursa endüktans düşük kalır.
+- **Ekran görüntüsündeki kırmızı çerçeve:** güç kartı kısaltıldığında GUC_KARTI kural alanı ve VBAT/GND döküm sınırları eski ölçüde (y = −42) kalmıştı. Yeni kenara (y = 27) kırpıldı.
+- **Doğrulama (kurallar devrede):** DRC 0 hata, 0 kart içi bağlantısız, parite 0. Kartlar arası 63 "bağlantısız" beklenen durum; 2'si bank ile güç kartı arasındaki VBAT/GND bara bağlantısı.
+- **Çıktılar:** `uretim/film_bank_gerber.zip`, montaj ve BOM'da 5. modül.
+
 ### 2.14.10 Hâlâ açık olanlar
-1. Bara kondansatörü gerilim payı: kullanıcı kabul etti; firmware sınırı zorunlu.
-2. Özel footprint land pattern'leri (2.14.9).
+1. ~~Bara kondansatörü gerilim payı~~: 2.15.2 ile kapandı (450 V film bankı). Firmware V_BUS sınırı yine önerilir.
+2. ~~Özel footprint land pattern'leri (2.14.9)~~: 2.16 ile kapandı.
+4. Film bankı + batarya kablosu rezonansı: Faz 8'de ölçülecek (2.15.2).
 3. Primer kaynaktan doğrulanamayanlar: SP0503BAHT pin şekli, MIC2128 ve kristal pad ölçüleri, LDL1117 kararlılık eğrileri, USB4105 pad ölçüleri.
 
 ## 3. Uygulama planı

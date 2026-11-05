@@ -2223,28 +2223,6 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 425.45 91.44 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0671cb00-3e78-4c65-ac93-78ef1175d0c8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
 		(at 412.75 91.44 270)
 		(effects
 			(font
@@ -2353,50 +2331,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 147.32 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0fa01b6f-4a65-45c3-96e7-67a492f98746")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 412.75 251.46 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "111c31a1-d669-4075-aff8-1238cc20940a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "VBAT"
 		(shape bidirectional)
 		(at 425.45 139.7 90)
@@ -2431,28 +2365,6 @@
 		(uuid "14aeaee5-6979-403d-adcb-adee34283b45")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 104.14 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 259.08 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "192f9215-c9ab-40c8-8058-81ff4a0cc10f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2529,28 +2441,6 @@
 			)
 		)
 	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 251.46 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1e8e0446-1a21-4d2c-b3d0-cff7fa4228c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "V_SNS_N"
 		(shape bidirectional)
 		(at 218.44 246.38 180)
@@ -2607,28 +2497,6 @@
 		(uuid "22cc0187-8809-46e6-be74-faa560bde573")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 412.75 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 438.15 35.56 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "243c0dff-a3ae-4669-bd84-73128a19dfc1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2947,28 +2815,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 438.15 147.32 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "44f6804d-b602-4e60-9af7-3e14f59e563b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "VBAT"
 		(shape bidirectional)
 		(at 412.75 83.82 90)
@@ -3057,72 +2903,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 438.15 91.44 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e3f6ab8-90a9-4adf-a8b5-7fca02afffa0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 438.15 27.94 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4ed6dc28-de8b-4894-aa99-a187ecc9d958")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 167.64 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4fe2cb68-9886-4305-8d3e-da60ebd3e391")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "W_SNS_N"
 		(shape bidirectional)
 		(at 335.28 246.38 180)
@@ -3179,28 +2959,6 @@
 		(uuid "51d18866-2a18-4e63-bd3b-c2b56ea582ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.82 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 314.96 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "52e74719-8906-4315-8b4a-47be85d5ddc5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 314.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3299,72 +3057,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 314.96 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5bfd16ac-0525-4f2e-9b4b-f2297ccec6a3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 314.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 63.5 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5cd33566-2723-4076-b833-a09a6e3c74be")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 438.15 139.7 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5eb9bc7f-5fd3-4ddf-b3cc-96f36443d5c9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "G_UL2"
 		(shape bidirectional)
 		(at 68.58 248.92 180)
@@ -3399,50 +3091,6 @@
 		(uuid "5fa25542-d35d-46cb-9204-07a5b7c012ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 30.48 304.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 412.75 314.96 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6130e82d-7ec0-47e5-9760-65dd51b81ad5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 314.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 307.34 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "637a7377-8dea-43e0-b544-af630edf1fbc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 307.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3563,28 +3211,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 438.15 175.26 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6a5688b1-d15f-4673-a1b3-e6a858e6eb00")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "G_VL2"
 		(shape bidirectional)
 		(at 182.88 248.92 180)
@@ -3651,28 +3277,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 412.75 231.14 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6ed06cf3-ecf4-4e92-aba5-c63a7fd568fc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "W_SNS_P"
 		(shape bidirectional)
 		(at 335.28 243.84 180)
@@ -3707,50 +3311,6 @@
 		(uuid "6f9ef2fa-e782-4037-9a41-fe2b0f94ebd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 438.15 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 203.2 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "700611cf-3ba9-4228-955a-420fe0f11ce5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 195.58 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "700e8eff-b104-4653-b42f-63bd705553f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3805,50 +3365,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 287.02 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7887057a-88dd-4a52-80a6-a762496eccdc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 83.82 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7a27406c-687f-44cb-bd75-f6ab7420ff73")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "VBAT"
 		(shape bidirectional)
 		(at 175.26 25.4 90)
@@ -3883,28 +3399,6 @@
 		(uuid "7bb5dc99-3325-4b3b-8b14-12ba194d6dd8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 40.64 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 412.75 279.4 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c1cc040-9ff2-41df-9f77-f3ef2c688b11")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 279.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4047,28 +3541,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 63.5 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8bad3a18-5872-431d-97f5-fb39dcf33e6b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "G_WL1"
 		(shape bidirectional)
 		(at 167.64 144.78 180)
@@ -4157,28 +3629,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 175.26 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "92105e7a-3800-4a94-b9ef-ebd234581c76")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "WSH"
 		(shape bidirectional)
 		(at 132.08 274.32 270)
@@ -4191,50 +3641,6 @@
 		(uuid "9271246d-0b2d-47f7-9760-b531982deb19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 132.08 274.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 167.64 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9369c085-2e78-446e-9bd0-f6633ccb09d4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 139.7 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93e2588a-2e55-453a-af61-89019ba84b6f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4335,28 +3741,6 @@
 	)
 	(global_label "VBAT"
 		(shape bidirectional)
-		(at 425.45 55.88 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9b81b5a0-c38d-43de-b570-cae394bc8041")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
 		(at 425.45 27.94 90)
 		(effects
 			(font
@@ -4443,28 +3827,6 @@
 			)
 		)
 	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 251.46 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9e91108a-0960-4d0c-9a7f-052446bac9a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 412.75 35.56 270)
@@ -4477,94 +3839,6 @@
 		(uuid "a27df3d2-17e0-4739-871d-30ef4600987b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 412.75 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 175.26 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a3eb2960-42e4-4892-bad9-cc57ab7f2b66")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 175.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 412.75 307.34 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a3f41082-26b9-46e1-95ef-e48bec17bd31")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 307.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 259.08 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a3f60f68-3871-4ab3-8728-ae19c4921360")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 259.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 438.15 337.82 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a402f73a-89b3-475b-836b-43fef5223459")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 337.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4675,72 +3949,6 @@
 		(uuid "ab6a6f99-828a-465a-bd70-430c4bb5f438")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 302.26 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 231.14 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "abe84587-fbaf-48f8-9401-767fe97d02b6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 231.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 279.4 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ac7c8635-3d30-4cb4-9cf9-715b1cedaac8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 412.75 259.08 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ad2e6f98-364b-408e-8592-80067e46c2a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 259.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4927,28 +4135,6 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 425.45 203.2 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bb3cb917-dfe6-4ebb-917c-e7728f039ea6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "G_WL1"
 		(shape bidirectional)
 		(at 299.72 243.84 180)
@@ -4961,28 +4147,6 @@
 		(uuid "bec7443c-7836-4afa-baf2-b0eacbf7a69e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 299.72 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 195.58 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "beff6f45-9b11-44e4-8bf3-7e9fee470b87")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5301,28 +4465,6 @@
 			)
 		)
 	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 425.45 223.52 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d0e08a7d-c170-42ce-8ea8-fc14f7184fca")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 425.45 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "Phase_W"
 		(shape bidirectional)
 		(at 264.16 40.64 270)
@@ -5347,50 +4489,6 @@
 	)
 	(global_label "GND"
 		(shape bidirectional)
-		(at 412.75 287.02 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d78e2468-559d-47f2-aaa1-bf800cafa005")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 438.15 83.82 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d7db0c91-e14c-4611-b8ad-ed7a817ff483")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
 		(at 425.45 147.32 270)
 		(effects
 			(font
@@ -5401,50 +4499,6 @@
 		(uuid "d8ba9864-6e40-4412-a0ed-d70f0227e6fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 425.45 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 412.75 223.52 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "db36a9f9-2f24-42c7-a808-53c249dacdae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 412.75 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 438.15 345.44 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dd6092ba-7fce-4627-afe4-75f10fba91cd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 345.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5489,28 +4543,6 @@
 		(uuid "e1a7a8a2-858d-4747-8d79-80d4d20d336a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 412.75 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 438.15 167.64 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e3daa9d7-4ab0-4dd9-aebf-3cdc1d5dfa9c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 438.15 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5587,28 +4619,6 @@
 			)
 		)
 	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 337.82 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e7e2f455-b271-4da1-9f99-02ed7784d065")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 337.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape bidirectional)
 		(at 450.85 287.02 270)
@@ -5621,28 +4631,6 @@
 		(uuid "e80d57b9-5065-4521-8788-ed91dd920aa9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 450.85 287.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape bidirectional)
-		(at 450.85 345.44 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e97450c2-a316-4779-be47-0dc657448678")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 345.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5763,28 +4751,6 @@
 			)
 		)
 	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 55.88 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f2c3be8d-60dc-4057-b09c-93cc63744027")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(global_label "Phase_W"
 		(shape bidirectional)
 		(at 129.54 134.62 90)
@@ -5841,28 +4807,6 @@
 		(uuid "f6e862f9-c96b-44cf-bdbb-0e510790e0ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 30.48 274.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape bidirectional)
-		(at 450.85 307.34 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f9367bc5-5561-45c1-a057-a235cdf23aff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 450.85 307.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6261,100 +5205,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 412.75 311.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0f208e6c-ad89-4c0e-a0f3-87a8c42cc893")
-		(property "Reference" "C108"
-			(at 410.21 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 415.29 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 413.715 307.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 412.75 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 412.75 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 412.75 311.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48009a4f-ec9e-4030-9e9f-c031b10e1420")
-		)
-		(pin "2"
-			(uuid "8666a8ed-2672-4638-8bd3-ca91f8265b6f")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C108")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 450.85 227.33 0)
 		(unit 1)
@@ -6713,100 +5563,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "18c818ba-55f9-465f-83df-209719b242c2")
-		(property "Reference" "C118"
-			(at 448.31 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62b47c64-a6e4-451c-a07f-14c4f11079d7")
-		)
-		(pin "2"
-			(uuid "4573b1e7-6568-4b84-94fb-ad7d3dd6e925")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C118")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 73.66 246.38 0)
 		(unit 1)
@@ -6893,100 +5649,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1d1a2a75-a5c1-4549-abc3-cf4723ec5c81")
-		(property "Reference" "C119"
-			(at 448.31 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7e54fc1-6923-4590-8863-389db3eb99bd")
-		)
-		(pin "2"
-			(uuid "e3446312-2dbb-4f9d-9069-a8ec0f037cd2")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C119")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 269.24 246.38 0)
 		(unit 1)
@@ -7067,288 +5729,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "J32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 412.75 255.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2200b048-2bb2-4575-b4a1-7c43d4689236")
-		(property "Reference" "C130"
-			(at 410.21 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 415.29 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 413.715 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 412.75 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 412.75 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 412.75 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be8969c5-177e-47cb-accc-f92e478ff623")
-		)
-		(pin "2"
-			(uuid "f57fe548-1966-475f-a69f-4112a88aabb2")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C130")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C130")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 255.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "24d704f2-3a72-4e8b-8d32-94b151345dd7")
-		(property "Reference" "C114"
-			(at 422.91 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "74014e11-02ae-420a-a9c0-57022b02f9bb")
-		)
-		(pin "2"
-			(uuid "71218465-e8ea-4333-a659-7a15f72fb6cb")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C114")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C114")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 311.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "289b8804-fa19-4f54-ad4c-78dfa32078ec")
-		(property "Reference" "C121"
-			(at 448.31 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 307.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 311.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8237376e-bedc-4c82-8036-66ac48e86ecf")
-		)
-		(pin "2"
-			(uuid "30d39270-a53a-47b3-a4ff-5bb0328a357a")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C121")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C121")
 					(unit 1)
 				)
 			)
@@ -7443,288 +5823,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "C55")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 311.15 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2df84fb4-d944-46ed-9bcf-3d51039b6d37")
-		(property "Reference" "C131"
-			(at 422.91 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 311.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 307.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 311.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 311.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5d873e4-dafc-47db-8d56-702c0c7dbc8a")
-		)
-		(pin "2"
-			(uuid "f3f6f4cc-11ec-48d3-ba39-9129eca5b7be")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C131")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C131")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 412.75 283.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2eaf9334-3932-40cb-beb7-cc7f06b706ab")
-		(property "Reference" "C116"
-			(at 410.21 283.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 415.29 283.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 413.715 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 412.75 283.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 412.75 283.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 412.75 283.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18fbbe31-1817-4e09-8252-006ef11de645")
-		)
-		(pin "2"
-			(uuid "91ea0731-bfd1-401c-9f38-6a7073004202")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C116")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 438.15 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2fdad171-0272-4148-a9cf-20435614d191")
-		(property "Reference" "C110"
-			(at 435.61 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 440.69 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 439.115 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 438.15 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 438.15 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f34e1070-fc80-45fc-8a65-c9b46fbf8fbb")
-		)
-		(pin "2"
-			(uuid "3b7c0a03-f3f4-4798-86b4-bf4600afdda5")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C110")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C110")
 					(unit 1)
 				)
 			)
@@ -7914,194 +6012,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 341.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "35540f4e-d0f3-442d-9314-f2bb41a6d8d4")
-		(property "Reference" "C126"
-			(at 448.31 341.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 341.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 337.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 341.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 341.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 341.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26ba2720-d036-4e68-a93a-514681630e2c")
-		)
-		(pin "2"
-			(uuid "329d8763-722b-499d-8b2e-860d3dff6d49")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C126")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 283.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "38280e22-5e03-4edb-bdf3-c923a8abd469")
-		(property "Reference" "C111"
-			(at 422.91 283.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 283.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 279.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 283.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 283.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 283.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f33432f6-8705-40e9-822c-a30ec7920b13")
-		)
-		(pin "2"
-			(uuid "242cd203-94f7-4767-afbc-515d8fd38e80")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C111")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C111")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 187.96 246.38 0)
 		(unit 1)
@@ -8282,100 +6192,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 227.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3fbb111b-e93b-4866-9dc9-c733719ecb08")
-		(property "Reference" "C109"
-			(at 422.91 227.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 227.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "910d4988-4f02-4526-a958-f919b2c54958")
-		)
-		(pin "2"
-			(uuid "4ad10719-6b91-4463-b229-ca58c2a90e64")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C109")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "bldc_proje:IRFB4110PBF")
 		(at 81.28 33.02 0)
 		(unit 1)
@@ -8459,100 +6275,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4363760b-edf8-4465-9449-06554183fe49")
-		(property "Reference" "C124"
-			(at 422.91 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "413162fa-8fcf-483b-926f-7ea1a238c3b8")
-		)
-		(pin "2"
-			(uuid "176f1621-7ae6-4496-8e87-50061d936ce6")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C124")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C124")
 					(unit 1)
 				)
 			)
@@ -8727,100 +6449,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "C56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4bfffb66-e065-432c-83df-ef68f482cc2f")
-		(property "Reference" "C129"
-			(at 448.31 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9fb3f1e6-51da-480b-a789-41fe8a91662d")
-		)
-		(pin "2"
-			(uuid "4e66a503-96f0-46f0-8cdc-009705f03d8d")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C129")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C129")
 					(unit 1)
 				)
 			)
@@ -9428,100 +7056,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 438.15 341.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "65f5db28-1aff-44cb-ad48-d227947480e9")
-		(property "Reference" "C125"
-			(at 435.61 341.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 440.69 341.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 439.115 337.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 341.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 438.15 341.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 438.15 341.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e2fbe91-001f-480d-9aa5-e3b8f622611e")
-		)
-		(pin "2"
-			(uuid "e1355616-1bfb-49b9-84dd-42628c09d504")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C125")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "bldc_proje:IRFB4110PBF")
 		(at 81.28 142.24 0)
 		(unit 1)
@@ -9694,100 +7228,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "Q12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 199.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6e715b07-1e50-429d-b351-3eb911974a12")
-		(property "Reference" "C127"
-			(at 422.91 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f233672-afa0-43a9-a1ef-1d96e711d8e7")
-		)
-		(pin "2"
-			(uuid "239dfdd8-4745-4c7e-b697-fcae783ec256")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C127")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C127")
 					(unit 1)
 				)
 			)
@@ -9968,100 +7408,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "J26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 438.15 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73e57d18-bc9a-4079-87a7-f4d372a1efef")
-		(property "Reference" "C120"
-			(at 435.61 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 440.69 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 439.115 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 438.15 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 438.15 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "30d00c96-94f0-40e9-b403-d44ba54d5f7d")
-		)
-		(pin "2"
-			(uuid "9860edf2-9d3d-43b7-82d3-d85e55f25734")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C120")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C120")
 					(unit 1)
 				)
 			)
@@ -10795,100 +8141,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "99906b04-f99d-49d7-b330-01d867dad00a")
-		(property "Reference" "C123"
-			(at 422.91 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b8b5e9c-88a1-434e-a5c4-67837179e035")
-		)
-		(pin "2"
-			(uuid "f65d7dbe-081b-4f17-a9c6-bfc1e1a7250f")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C123")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 438.15 311.15 0)
 		(unit 1)
@@ -11335,100 +8587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 412.75 227.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b461c5de-e2e3-406d-8624-dc990eba001c")
-		(property "Reference" "C112"
-			(at 410.21 227.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 415.29 227.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 413.715 223.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 412.75 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 412.75 227.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 412.75 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f1f69f8-2a3d-46a0-b918-70f60be9da02")
-		)
-		(pin "2"
-			(uuid "871cc2f3-3b94-4fc9-99a3-9a89c863f53e")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C112")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C112")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 205.74 134.62 0)
 		(unit 1)
@@ -11863,100 +9021,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "C72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 438.15 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c625ce76-eeb5-417d-a090-20b4cc00af08")
-		(property "Reference" "C128"
-			(at 435.61 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 440.69 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 439.115 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 438.15 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 438.15 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aac49d8d-3817-43f2-8513-1e1a608b0c9a")
-		)
-		(pin "2"
-			(uuid "a6581d79-e0ea-4e9e-a5d3-b5ecdf0ba4d4")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C128")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C128")
 					(unit 1)
 				)
 			)
@@ -12582,382 +9646,6 @@
 				)
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
 					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 255.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "dcd0df92-5e22-418d-8402-f577c5f3d1c5")
-		(property "Reference" "C117"
-			(at 448.31 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 255.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 251.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ae4f7955-874c-490e-8df9-098db1bf2392")
-		)
-		(pin "2"
-			(uuid "f2655a79-2f78-4220-b8d5-016549d22a7e")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C117")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C117")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 450.85 199.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e32edc65-58dd-412c-bebf-19b517454059")
-		(property "Reference" "C113"
-			(at 448.31 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 453.39 199.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 451.815 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 450.85 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 450.85 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 450.85 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d4d1d7c1-f7c1-43eb-ad52-02541d6ae2c3")
-		)
-		(pin "2"
-			(uuid "729bbcc4-2c02-4a30-8195-abc8af905aa7")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C113")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 438.15 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e37b64da-a8f0-4533-8433-90bea9cd0df4")
-		(property "Reference" "C122"
-			(at 435.61 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 440.69 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 439.115 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 438.15 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 438.15 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 438.15 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "69b0e772-4c2f-4330-abd6-e359e3b39d05")
-		)
-		(pin "2"
-			(uuid "f4505d01-0f26-4647-8945-1ab13dfbbce6")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C122")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C122")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 425.45 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e8e915ba-22e8-4b48-8dcd-c7317108eb2d")
-		(property "Reference" "C115"
-			(at 422.91 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 427.99 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 426.415 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 425.45 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 425.45 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 425.45 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f45b56a2-868b-4f8c-b227-40dd8354aaa5")
-		)
-		(pin "2"
-			(uuid "df7f13f7-d31e-46e5-9190-f59d23a07c15")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/6ab95df6-e138-4923-bf1d-5cb12b7569dc/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C115")
-					(unit 1)
-				)
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C115")
 					(unit 1)
 				)
 			)
@@ -15942,1986 +12630,6 @@
 		(uuid "5243cb7f-9a46-486c-9dd7-fc641926227c")
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "44d488a5-a251-4ee7-861a-8b86fe7c187f")
-		(property "Reference" "C179"
-			(at 637.54 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f2e1e7c-95e5-46fa-95a5-230d34f76d94")
-		)
-		(pin "2"
-			(uuid "8a2dd609-e248-4a4b-803d-b95cb0e6fb52")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C179")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 26.67 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9df02b68-dbc6-41b3-8f07-ae43ed630f20")
-	)
-	(global_label "GND"
-		(at 640.08 34.29 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e8936332-391b-4b01-9df0-076a5892329a")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "820bdddf-2a2f-4d1c-9efb-6b33aafa288c")
-		(property "Reference" "C180"
-			(at 637.54 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "552cdd41-42e9-435f-8879-645fae09deb4")
-		)
-		(pin "2"
-			(uuid "10f3ab7e-8f18-45e9-b843-f3a280a777b8")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C180")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 57.15 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e3786dc7-4af9-4158-ba36-7d4fb0de7db9")
-	)
-	(global_label "GND"
-		(at 640.08 64.77 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a653544e-0cf5-42e4-a64c-ffb63b8aaf23")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d2fb7746-3c99-455f-b6bc-a5e97568da29")
-		(property "Reference" "C181"
-			(at 637.54 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ee73adc-c39e-4ba7-9c1c-c715a9a341c6")
-		)
-		(pin "2"
-			(uuid "1894eec0-3018-4c30-aaf2-3e99a0678789")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C181")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 87.63 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ad517228-b083-4cc2-a2f3-0811014710b0")
-	)
-	(global_label "GND"
-		(at 640.08 95.25 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4529fb41-4e50-4696-9e23-539a33807628")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3bce0919-f081-4771-a2ca-1e5ed169dd84")
-		(property "Reference" "C182"
-			(at 637.54 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 121.92 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b3d676f-c20e-4e5a-a860-488dd7d08bf6")
-		)
-		(pin "2"
-			(uuid "9a3b0e3d-5e56-42d3-a048-576f7def99d8")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C182")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 118.11 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5573ec0f-d843-4125-b791-e4881fc304de")
-	)
-	(global_label "GND"
-		(at 640.08 125.73 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8029935c-8457-4046-90ee-c9dd8a557ff9")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "84c34b7d-8fc1-413d-8b33-9471c5f8abe9")
-		(property "Reference" "C183"
-			(at 637.54 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b3d505e5-bca7-472b-9b9e-cb3ebd8c6dbe")
-		)
-		(pin "2"
-			(uuid "6c75c610-4bc5-4aad-bd35-7e2f2484dfe7")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C183")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 148.59 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4e56e12d-a792-48d7-98a3-bfbfba9d555b")
-	)
-	(global_label "GND"
-		(at 640.08 156.21 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "63cb6bcb-6d22-43c1-a71e-b98812280860")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9ffb1bf2-428a-48c1-ab3d-ffd20861852a")
-		(property "Reference" "C184"
-			(at 637.54 182.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 182.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5166651c-7a6f-4715-aba4-9ae4b4e1879d")
-		)
-		(pin "2"
-			(uuid "e25713ca-dbfa-40bb-a9a0-4d65114941da")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C184")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 179.07 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d458028b-48cd-4257-a0c6-e8918f0af327")
-	)
-	(global_label "GND"
-		(at 640.08 186.69 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48a87707-47f8-40c9-9545-c7b17a639d42")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 213.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "28258647-56c9-415e-b65c-c700368d4038")
-		(property "Reference" "C185"
-			(at 637.54 213.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 213.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 213.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 213.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a6507bd-8bf4-481f-b0f4-425c41a14feb")
-		)
-		(pin "2"
-			(uuid "092a12f8-ef00-4abe-9dbd-9a4d605df13b")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C185")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 209.55 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7d03895d-7bcd-4b0b-8a70-b415ea899a60")
-	)
-	(global_label "GND"
-		(at 640.08 217.17000000000002 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4494e826-0960-433c-9a3a-7fd3068cb09a")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 243.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1fa228e5-124f-480d-b467-bacc8b92ecd9")
-		(property "Reference" "C186"
-			(at 637.54 243.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 243.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 240.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 243.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e74ef370-30ed-45f7-ace6-86db8a1d2877")
-		)
-		(pin "2"
-			(uuid "a1f1349c-edd3-407d-9a89-5e22ae69f8a2")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C186")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 240.03 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e5b4dcd2-9f28-4246-9cee-6ee28881a269")
-	)
-	(global_label "GND"
-		(at 640.08 247.65 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6d92afc0-417a-4b25-8778-3864b3002e0e")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 274.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "db41a17b-367e-4e08-9ebf-909f3ca99782")
-		(property "Reference" "C187"
-			(at 637.54 274.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 274.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 270.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 274.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 274.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 274.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d6762a0-a8ed-4194-8f7e-2a5bf274ad3e")
-		)
-		(pin "2"
-			(uuid "47982282-3709-4e96-9e35-8d603b6b690c")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C187")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 270.51 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e102372f-50a0-4880-a95a-1612fbf98421")
-	)
-	(global_label "GND"
-		(at 640.08 278.13 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b9c64100-6fb1-4014-9e4d-5fa74c75e2b0")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 304.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "05e666f6-db8e-4958-ba0e-f5a80845d256")
-		(property "Reference" "C188"
-			(at 637.54 304.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 304.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 300.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 304.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 304.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 304.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "893c2c14-75e2-496c-9d6d-761514ec580e")
-		)
-		(pin "2"
-			(uuid "1c32f86e-9e10-4289-b570-847ffef33a9a")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C188")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 300.99 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8218728e-573c-4c78-b28f-82e8b9e003fb")
-	)
-	(global_label "GND"
-		(at 640.08 308.61 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "97e010c9-aa9b-4b42-8119-0a5b78639120")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 335.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ef52f1b8-8420-40e5-8c8b-fde0e7f626f6")
-		(property "Reference" "C189"
-			(at 637.54 335.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 335.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 335.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 335.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 335.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e5f1d20b-5d09-4a79-9845-0f6d096c6afd")
-		)
-		(pin "2"
-			(uuid "bb2f62fa-8170-4de2-9e79-8f35dd38bd5b")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C189")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 331.46999999999997 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3de1a755-bf6c-4aec-b3b1-dac47816852b")
-	)
-	(global_label "GND"
-		(at 640.08 339.09 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "268c9e39-0e49-4453-b6ed-486dc5e7e8de")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 365.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "02070971-2231-45b3-b241-f3922b365f0f")
-		(property "Reference" "C190"
-			(at 637.54 365.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 365.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 361.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 365.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6633687b-ee0b-4190-92d4-553cd060de4f")
-		)
-		(pin "2"
-			(uuid "6795c6a4-f95b-43c5-808a-dd31ec6b1664")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C190")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 361.95 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "311bb116-86ac-407a-a421-81d0de042af5")
-	)
-	(global_label "GND"
-		(at 640.08 369.57 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "43fcf123-1e4f-47e6-8bc0-fb7dcbe8e55e")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 396.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e22de5a8-8bb2-4e80-8160-c9cc099101e8")
-		(property "Reference" "C191"
-			(at 637.54 396.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 396.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 392.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 396.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 396.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 396.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "272ed58a-f3c9-4c3d-a9b7-0399a069a134")
-		)
-		(pin "2"
-			(uuid "f1407943-2417-4873-b820-a68006eba3b1")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C191")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 392.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "83a2ce69-93d8-44d2-9dc0-7b4d96274474")
-	)
-	(global_label "GND"
-		(at 640.08 400.05 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c0757d52-f3f6-4a80-b2a4-ef335df1e21b")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 426.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "afaf63f8-cf5e-4151-93f2-8121486c9497")
-		(property "Reference" "C192"
-			(at 637.54 426.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 426.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 422.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 426.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 426.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 426.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "639dd0c2-52e9-44e9-9322-6ab504a50afa")
-		)
-		(pin "2"
-			(uuid "caefc5d2-6cae-40ce-8a57-f4777126c3aa")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C192")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 422.91 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "722f5c24-4934-474d-a980-1fe65117d773")
-	)
-	(global_label "GND"
-		(at 640.08 430.53000000000003 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "58c022d0-ef35-46bc-a2ce-7ec7195a05e0")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 457.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "de75eaff-7b43-404c-8cc2-b735aa0c1f7b")
-		(property "Reference" "C193"
-			(at 637.54 457.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 457.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 453.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 457.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 457.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 457.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f611262-9ddf-4a00-89b8-aae64fec2cd2")
-		)
-		(pin "2"
-			(uuid "0ed2d3c0-f6f9-461e-982a-e0ed9872285a")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C193")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 453.39 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d5d3f6de-8138-4b4a-911d-b2475bf07829")
-	)
-	(global_label "GND"
-		(at 640.08 461.01 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "092f731d-cf84-4669-9306-3c99abdd43aa")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 487.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a4850dac-655b-4cca-86ea-6935540f529e")
-		(property "Reference" "C194"
-			(at 637.54 487.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 487.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 483.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 487.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 487.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 487.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "aed8422e-e694-4634-83cd-719e1a10c46f")
-		)
-		(pin "2"
-			(uuid "da6a0c58-8231-4b1b-9607-6baacf789759")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C194")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 483.87 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8330ad74-e0f7-4ba0-bb58-5a0a1a69ca53")
-	)
-	(global_label "GND"
-		(at 640.08 491.49 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c334f07f-8dc8-46c6-93c6-4f9da8e32b3a")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 518.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bec519f8-5a45-407f-8616-5ca188015e4d")
-		(property "Reference" "C195"
-			(at 637.54 518.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 518.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 514.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 518.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 518.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 518.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2e963660-a3e6-4d1e-b9c0-cea813f783f0")
-		)
-		(pin "2"
-			(uuid "9889b81e-6cec-4afa-a4d5-09a5651f12c8")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C195")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 514.35 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1a88d1eb-415c-4465-8879-e853518fa1cc")
-	)
-	(global_label "GND"
-		(at 640.08 521.9699999999999 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7bb3ef63-ee11-4000-b5ee-78f7081f6b83")
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 640.08 548.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1b57c0e6-5d17-4ed7-a1ef-02a6c211c52a")
-		(property "Reference" "C196"
-			(at 637.54 548.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470uF/63V"
-			(at 642.62 548.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "KLH-063V471MH200-TA5.0:KLH-063V471MH200-TA5.0"
-			(at 641.045 544.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 640.08 548.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 640.08 548.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "PKLH-063V471MH200-T/A5.0"
-			(at 640.08 548.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee8c299c-2a1f-4f48-81fe-c7f21003dc7c")
-		)
-		(pin "2"
-			(uuid "50ede9c7-3fdd-448a-998b-9b4befb5575a")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "C196")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(at 640.08 544.83 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "93812808-ca5f-4d83-b772-969b945fb172")
-	)
-	(global_label "GND"
-		(at 640.08 552.4499999999999 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2b1b564-709d-4a92-9efc-e8e7ea30e828")
-	)
-	(symbol
 		(lib_id "Device:D_TVS")
 		(at 699.77 30.48 0)
 		(unit 1)
@@ -18433,6 +13141,582 @@
 			(justify right)
 		)
 		(uuid "62d6b376-b0b7-44ef-a8a4-530e7ba130bb")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 779.78 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3cf3a28e-e8fc-450d-a048-9fadc1374657")
+		(property "Reference" "C200"
+			(at 777.24 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50uF/450V film"
+			(at 782.32 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
+			(at 780.745 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 779.78 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b487f15-cc7c-401f-a2fc-279bb63ecb15")
+		)
+		(pin "2"
+			(uuid "9442d38c-8c69-4f9f-a0ec-3060877151df")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C200")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 779.78 34.29 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31762077-2239-4351-8ac2-452f28453943")
+	)
+	(global_label "VBAT"
+		(at 779.78 26.67 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "277d6d44-76dc-434b-b3f7-8fabd1d49193")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 779.78 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1fa1e92-223a-4ef4-a454-e4c7aa5fc337")
+		(property "Reference" "C201"
+			(at 777.24 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50uF/450V film"
+			(at 782.32 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
+			(at 780.745 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 779.78 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b36bcec5-83e0-47fc-9e98-562ddd54bb2d")
+		)
+		(pin "2"
+			(uuid "0df93780-ba1a-4433-9d41-9a53e3032512")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 779.78 64.77 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7d7d463-2ff2-477f-a091-2bc841e81e1b")
+	)
+	(global_label "VBAT"
+		(at 779.78 57.15 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "63fdb9f9-8c79-4680-aa39-f047eab853dd")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 779.78 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7eeacd89-5c9f-48ab-85b8-db4a5d347ddb")
+		(property "Reference" "C202"
+			(at 777.24 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50uF/450V film"
+			(at 782.32 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
+			(at 780.745 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 779.78 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "353499ea-67e6-4e78-ab1f-d679970f94a3")
+		)
+		(pin "2"
+			(uuid "76ab5cdb-d021-4c68-9383-a4abd87a6826")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 779.78 95.25 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "23c93470-5c28-4d72-8e30-d35ee3f7875f")
+	)
+	(global_label "VBAT"
+		(at 779.78 87.63 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bc947b7-a288-42c7-abe0-71bb49271c57")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 779.78 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d98c8c08-b51a-4129-97ff-061cbd1a9bfc")
+		(property "Reference" "C203"
+			(at 777.24 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50uF/450V film"
+			(at 782.32 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
+			(at 780.745 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 779.78 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40900e0d-2e30-4d33-9764-85a58f987a7a")
+		)
+		(pin "2"
+			(uuid "10647ae4-d834-41c6-97c6-6b8532fc1bbf")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 779.78 125.73 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "04132ff6-c528-4ada-bb07-2e1cea3f6af1")
+	)
+	(global_label "VBAT"
+		(at 779.78 118.11 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "67dbae51-003f-4fb6-ac09-7a11f0b1acd8")
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 779.78 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d760216a-550f-4b72-8241-d4274d287fd4")
+		(property "Reference" "J52"
+			(at 779.78 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M5_Bara_VBAT"
+			(at 779.78 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
+			(at 779.78 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 779.78 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3407503-dee4-4a62-892c-b062a783a77d")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "J52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 784.86 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d5d1edf9-b5e1-43ad-aba0-f31200d5783a")
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 779.78 182.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70072c00-435a-4b64-aabf-5837f5f8c2dc")
+		(property "Reference" "J53"
+			(at 779.78 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "M5_Bara_GND"
+			(at 779.78 185.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
+			(at 779.78 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 779.78 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "be9835b6-6912-4c87-8192-81587aa711a6")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "J53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 784.86 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9aed1c06-d8c8-429c-afc3-f7cf67a4652d")
 	)
 	(sheet_instances
 		(path "/"

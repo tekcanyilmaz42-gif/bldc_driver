@@ -36,7 +36,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "ADuM1201:ADuM1201"
+			(property "Footprint" "bldc_proje:ADuM1201_LP"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -284,7 +284,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "CH340G:CH340G"
+			(property "Footprint" "bldc_proje:CH340G_LP"
 				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3980,7 +3980,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "INA181:INA181"
+			(property "Footprint" "bldc_proje:INA181_LP"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4940,7 +4940,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "kutuphane:TJA1051"
+			(property "Footprint" "bldc_proje:TJA1051_LP"
 				(at -2.54 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5188,7 +5188,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "TLV9001:TLV9001"
+			(property "Footprint" "bldc_proje:TLV9001_LP"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9705,6 +9705,337 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Polyfuse"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Polyfuse_0_1"
+				(polyline
+					(pts
+						(xy -1.524 2.54) (xy -1.524 1.524) (xy 1.524 -1.524) (xy 1.524 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.762 2.54)
+					(end 0.762 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -20237,7 +20568,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA181:INA181"
+		(property "Footprint" "bldc_proje:INA181_LP"
 			(at 353.06 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -21107,7 +21438,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TLV9001:TLV9001"
+		(property "Footprint" "bldc_proje:TLV9001_LP"
 			(at 538.48 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -21462,7 +21793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kutuphane:TJA1051"
+		(property "Footprint" "bldc_proje:TJA1051_LP"
 			(at 289.56 326.39 0)
 			(hide yes)
 			(show_name no)
@@ -22579,7 +22910,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CH340G:CH340G"
+		(property "Footprint" "bldc_proje:CH340G_LP"
 			(at 205.74 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -24145,7 +24476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA181:INA181"
+		(property "Footprint" "bldc_proje:INA181_LP"
 			(at 683.26 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -24744,7 +25075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "INA181:INA181"
+		(property "Footprint" "bldc_proje:INA181_LP"
 			(at 63.5 335.28 0)
 			(hide yes)
 			(show_name no)
@@ -24842,7 +25173,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kutuphane:MIC2128"
+		(property "Footprint" "bldc_proje:MIC2128_LP"
 			(at 467.36 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -25308,7 +25639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ADuM1201:ADuM1201"
+		(property "Footprint" "bldc_proje:ADuM1201_LP"
 			(at 137.16 20.32 0)
 			(hide yes)
 			(show_name no)
@@ -26310,7 +26641,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TLV9001:TLV9001"
+		(property "Footprint" "bldc_proje:TLV9001_LP"
 			(at 749.3 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -27160,7 +27491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TLV9001:TLV9001"
+		(property "Footprint" "bldc_proje:TLV9001_LP"
 			(at 612.14 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -32558,7 +32889,206 @@
 		)
 		(uuid "1d9a8fa7-5f07-452b-b1bb-1cfd57e2e660")
 	)
+	(symbol
+		(lib_id "Device:Polyfuse")
+		(at 1196.34 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b13528f-4979-41f0-b18f-8926515a36e4")
+		(property "Reference" "F1"
+			(at 1193.8 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTC 1.1A/33V"
+			(at 1198.88 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+			(at 1197.61 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 1196.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 1196.34 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a832bf34-1d23-47db-815e-8011ae8cb06d")
+		)
+		(pin "2"
+			(uuid "f7585db3-ca61-43bb-a1b8-2529dcfdccac")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "12V_EXT"
+		(at 1196.34 43.18 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bf8eed77-8e36-4c1c-b39d-90a86e7f7c94")
+	)
 	(label "COIL_12V"
+		(at 1196.34 35.559999999999995 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a906b37f-64eb-4bc6-8598-47f6732116cb")
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 1196.34 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "89d1dafd-3be5-49c1-ba55-fed343862f2e")
+		(property "Reference" "D43"
+			(at 1196.34 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMAJ15A"
+			(at 1196.34 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 1196.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 1196.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 1196.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db1d1491-4b6e-43ba-b23f-d45f197be27e")
+		)
+		(pin "2"
+			(uuid "3f376d57-833e-4af0-a404-c662edd7c7b6")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "D43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "COIL_12V"
+		(at 1192.53 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cab1c054-7081-4853-b013-b997a9f2f887")
+	)
+	(global_label "GND"
+		(at 1200.1499999999999 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82a9a932-1d79-49e8-8b75-c057debd13a4")
+	)
+	(label "12V_EXT"
 		(at 1123.95 39.37 0)
 		(effects
 			(font
@@ -32566,7 +33096,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5ca6b4c8-ed73-4169-a857-45362e811f22")
+		(uuid "89214850-5979-44d7-9971-666d3f6578ad")
 	)
 	(sheet_instances
 		(path "/"

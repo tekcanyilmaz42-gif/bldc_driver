@@ -13143,8 +13143,8 @@
 		(uuid "62d6b376-b0b7-44ef-a8a4-530e7ba130bb")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 779.78 30.48 0)
+		(lib_id "Device:C_Polarized")
+		(at 779.78 213.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13152,9 +13152,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3cf3a28e-e8fc-450d-a048-9fadc1374657")
+		(uuid "2fba7275-bc9f-4c65-8665-7d9ea74d49a0")
 		(property "Reference" "C200"
-			(at 777.24 30.48 0)
+			(at 777.24 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13164,8 +13164,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50uF/450V film"
-			(at 782.32 30.48 0)
+		(property "Value" "1000uF/100V"
+			(at 782.32 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13175,8 +13175,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
-			(at 780.745 26.67 0)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13187,7 +13187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 779.78 30.48 0)
+			(at 779.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13197,8 +13197,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 779.78 30.48 0)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 213.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13206,13 +13206,31 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "5b487f15-cc7c-401f-a2fc-279bb63ecb15")
+			(uuid "027bc401-0342-49c0-83f7-b6bd1606904c")
 		)
 		(pin "2"
-			(uuid "9442d38c-8c69-4f9f-a0ec-3060877151df")
+			(uuid "f4a82293-1687-4f3e-a658-e6f5fc029c95")
 		)
 		(instances
 			(project "bldc_driver_ai"
@@ -13223,29 +13241,29 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(at 779.78 34.29 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "31762077-2239-4351-8ac2-452f28453943")
-	)
 	(global_label "VBAT"
-		(at 779.78 26.67 90)
+		(at 779.78 209.55 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "277d6d44-76dc-434b-b3f7-8fabd1d49193")
+		(uuid "49dc4d62-4199-4c3c-9769-4f8c95fd67ca")
+	)
+	(global_label "GND"
+		(at 779.78 217.17000000000002 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1e1823d8-382c-4645-b9d8-17f9fe9ee206")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 779.78 60.96 0)
+		(lib_id "Device:C_Polarized")
+		(at 779.78 243.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13253,9 +13271,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c1fa1e92-223a-4ef4-a454-e4c7aa5fc337")
+		(uuid "7f1617fe-92c3-4aa4-b731-613603fdcb6b")
 		(property "Reference" "C201"
-			(at 777.24 60.96 0)
+			(at 777.24 243.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13265,8 +13283,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50uF/450V film"
-			(at 782.32 60.96 0)
+		(property "Value" "1000uF/100V"
+			(at 782.32 243.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13276,8 +13294,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
-			(at 780.745 57.15 0)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 240.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13288,7 +13306,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 779.78 60.96 0)
+			(at 779.78 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13298,8 +13316,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 779.78 60.96 0)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13307,13 +13325,31 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "b36bcec5-83e0-47fc-9e98-562ddd54bb2d")
+			(uuid "9b5a606b-09d6-44d4-aaa4-99ee0d4ea748")
 		)
 		(pin "2"
-			(uuid "0df93780-ba1a-4433-9d41-9a53e3032512")
+			(uuid "6c9a9a77-df26-4b55-ba0b-cf4218a25949")
 		)
 		(instances
 			(project "bldc_driver_ai"
@@ -13324,29 +13360,29 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(at 779.78 64.77 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d7d7d463-2ff2-477f-a091-2bc841e81e1b")
-	)
 	(global_label "VBAT"
-		(at 779.78 57.15 90)
+		(at 779.78 240.03 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "63fdb9f9-8c79-4680-aa39-f047eab853dd")
+		(uuid "80528687-5387-4358-8c8a-2a9634c519f9")
+	)
+	(global_label "GND"
+		(at 779.78 247.65 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89b22fd0-6b85-48d0-a49a-1a8b65ae1a00")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 779.78 91.44 0)
+		(lib_id "Device:C_Polarized")
+		(at 779.78 274.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13354,9 +13390,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7eeacd89-5c9f-48ab-85b8-db4a5d347ddb")
+		(uuid "1e40ee40-8ff0-4f95-a98f-99850b99db8c")
 		(property "Reference" "C202"
-			(at 777.24 91.44 0)
+			(at 777.24 274.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13366,8 +13402,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50uF/450V film"
-			(at 782.32 91.44 0)
+		(property "Value" "1000uF/100V"
+			(at 782.32 274.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13377,8 +13413,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
-			(at 780.745 87.63 0)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 270.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13389,7 +13425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 779.78 91.44 0)
+			(at 779.78 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13399,8 +13435,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 779.78 91.44 0)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 274.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13408,13 +13444,31 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "353499ea-67e6-4e78-ab1f-d679970f94a3")
+			(uuid "34ec5279-4cd6-42dc-ad4c-fa2df2dfca2a")
 		)
 		(pin "2"
-			(uuid "76ab5cdb-d021-4c68-9383-a4abd87a6826")
+			(uuid "d8df4547-a912-4704-9793-b3faf30c4994")
 		)
 		(instances
 			(project "bldc_driver_ai"
@@ -13425,29 +13479,29 @@
 			)
 		)
 	)
-	(global_label "GND"
-		(at 779.78 95.25 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "23c93470-5c28-4d72-8e30-d35ee3f7875f")
-	)
 	(global_label "VBAT"
-		(at 779.78 87.63 90)
+		(at 779.78 270.51 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "9bc947b7-a288-42c7-abe0-71bb49271c57")
+		(uuid "a530e525-21e8-4c3b-bd95-ce73d20780c0")
+	)
+	(global_label "GND"
+		(at 779.78 278.13 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "85a79088-3868-40f8-ad67-a3c3dcb85734")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 779.78 121.92 0)
+		(lib_id "Device:C_Polarized")
+		(at 779.78 304.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13455,9 +13509,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d98c8c08-b51a-4129-97ff-061cbd1a9bfc")
+		(uuid "67fb65f3-4985-4ba8-bb26-b6c3b7fda74f")
 		(property "Reference" "C203"
-			(at 777.24 121.92 0)
+			(at 777.24 304.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13467,8 +13521,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50uF/450V film"
-			(at 782.32 121.92 0)
+		(property "Value" "1000uF/100V"
+			(at 782.32 304.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13478,8 +13532,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "bldc_proje:C_Film_TDK_B32776G_L42mm_W28mm_P37.5x10.2mm_4pin"
-			(at 780.745 118.11 0)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 300.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13490,7 +13544,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 779.78 121.92 0)
+			(at 779.78 304.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13500,8 +13554,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 779.78 121.92 0)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 304.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13509,13 +13563,31 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "40900e0d-2e30-4d33-9764-85a58f987a7a")
+			(uuid "e0ec0f0d-ed76-4253-829f-8075edade534")
 		)
 		(pin "2"
-			(uuid "10647ae4-d834-41c6-97c6-6b8532fc1bbf")
+			(uuid "c4cc4ae0-c496-4645-9f82-8ca6e479c571")
 		)
 		(instances
 			(project "bldc_driver_ai"
@@ -13526,29 +13598,29 @@
 			)
 		)
 	)
+	(global_label "VBAT"
+		(at 779.78 300.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98e38996-96aa-4bdd-b9cc-cd52342e9d06")
+	)
 	(global_label "GND"
-		(at 779.78 125.73 270)
+		(at 779.78 308.61 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "04132ff6-c528-4ada-bb07-2e1cea3f6af1")
-	)
-	(global_label "VBAT"
-		(at 779.78 118.11 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67dbae51-003f-4fb6-ac09-7a11f0b1acd8")
+		(uuid "0bccf2c8-274a-4267-83ca-56ef24f4de3d")
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 779.78 152.4 0)
+		(lib_id "Device:C_Polarized")
+		(at 779.78 335.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13556,29 +13628,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d760216a-550f-4b72-8241-d4274d287fd4")
-		(property "Reference" "J52"
-			(at 779.78 149.86 0)
+		(uuid "391f4306-06c2-41d4-b737-3780a38008ae")
+		(property "Reference" "C204"
+			(at 777.24 335.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "M5_Bara_VBAT"
-			(at 779.78 154.94 0)
+		(property "Value" "1000uF/100V"
+			(at 782.32 335.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 779.78 152.4 0)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 331.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13589,7 +13663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 779.78 152.4 0)
+			(at 779.78 335.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13599,8 +13673,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 779.78 152.4 0)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 335.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13608,115 +13682,2321 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "d3407503-dee4-4a62-892c-b062a783a77d")
+			(uuid "92c498f4-3000-4c92-ab42-219b13cc13a8")
+		)
+		(pin "2"
+			(uuid "0aa36caa-24b9-4305-8806-9f26ad022a40")
 		)
 		(instances
 			(project "bldc_driver_ai"
 				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "J52")
+					(reference "C204")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(global_label "VBAT"
-		(at 784.86 152.4 0)
+		(at 779.78 331.46999999999997 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "d5d1edf9-b5e1-43ad-aba0-f31200d5783a")
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 779.78 182.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70072c00-435a-4b64-aabf-5837f5f8c2dc")
-		(property "Reference" "J53"
-			(at 779.78 180.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "M5_Bara_GND"
-			(at 779.78 185.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_5.3mm_M5_Pad_Via"
-			(at 779.78 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 779.78 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 779.78 182.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be9835b6-6912-4c87-8192-81587aa711a6")
-		)
-		(instances
-			(project "bldc_driver_ai"
-				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
-					(reference "J53")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "2aaea11c-6d4f-46b0-864f-a53bfc489e02")
 	)
 	(global_label "GND"
-		(at 784.86 182.88 0)
+		(at 779.78 339.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "285f2b2e-6677-4679-859d-4f5588a96587")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 365.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "487e47e6-99cd-4b4e-b34f-b900ad4c9031")
+		(property "Reference" "C205"
+			(at 777.24 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 361.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 365.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 365.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f70359cf-1106-4a1f-8769-ecc9a255777b")
+		)
+		(pin "2"
+			(uuid "dd9b09a1-50b2-4a69-8be5-b74cbef5dcbf")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 361.95 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "9aed1c06-d8c8-429c-afc3-f7cf67a4652d")
+		(uuid "f5f0607e-12dc-4633-9a43-58db6ad1a82b")
+	)
+	(global_label "GND"
+		(at 779.78 369.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "db8cc6ac-7cf8-4d93-8c0c-86e9b1c1151b")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 396.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c7e37bc-4fb2-4ef1-86f5-8019fba4915a")
+		(property "Reference" "C206"
+			(at 777.24 396.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 396.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 392.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "101eeebe-0b37-4417-8b3b-b78699f927a8")
+		)
+		(pin "2"
+			(uuid "ada3f5fe-8d70-4995-bd47-c3d0aa63590c")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 392.43 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3927717d-a59a-4f1c-ac57-752eeed8bd08")
+	)
+	(global_label "GND"
+		(at 779.78 400.05 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50511b44-5f17-4392-83cd-032e0427066c")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 426.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a394f954-375e-43eb-9b78-2447b82d3d6b")
+		(property "Reference" "C207"
+			(at 777.24 426.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 426.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 422.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 426.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 426.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 426.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 426.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6642dbe1-051c-4db5-9281-4f4b1ba98cf2")
+		)
+		(pin "2"
+			(uuid "5549a011-d956-4e42-bf21-3ba78fe603b1")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 422.91 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a93a6add-cbea-4c96-88c3-a36922ef2693")
+	)
+	(global_label "GND"
+		(at 779.78 430.53000000000003 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ed995259-69fa-4243-bfbc-e1ed45389eac")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 457.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00c545b0-de92-4343-a019-ef536c6ee052")
+		(property "Reference" "C208"
+			(at 777.24 457.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 457.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 453.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 457.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 457.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8e24850-c21c-4e23-8df7-5c13be7d21f8")
+		)
+		(pin "2"
+			(uuid "9944bcbc-f9d6-4fc5-b810-022bd8a22745")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C208")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 453.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "21c6c0dc-9d4c-41d8-a0c6-c6fa275e95ce")
+	)
+	(global_label "GND"
+		(at 779.78 461.01 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7dc94c53-bd48-4ddd-8d1d-809bba20619b")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 487.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d855ba10-b639-4a9d-9312-b3e2ae5b6943")
+		(property "Reference" "C209"
+			(at 777.24 487.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 487.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 483.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 487.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 487.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2a01dc2-b47e-4d4d-8940-adc5aefaf62f")
+		)
+		(pin "2"
+			(uuid "7ce7f038-2537-44f9-a7de-dfde37f8d751")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 483.87 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "971f8c07-c4ba-4446-93a8-3089ece7bbb5")
+	)
+	(global_label "GND"
+		(at 779.78 491.49 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "90974af6-3973-4628-ad70-0e6c189f50a0")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 518.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6fe72437-e232-4e15-b6f5-bcc7f6584adb")
+		(property "Reference" "C210"
+			(at 777.24 518.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 518.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 514.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 518.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 518.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47e63675-4a1a-4720-95e3-14ebf41afc16")
+		)
+		(pin "2"
+			(uuid "8578e18b-9c12-40da-8f2e-2caab1342375")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 514.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b43520d3-06c3-452c-a8fe-a97a78fa5837")
+	)
+	(global_label "GND"
+		(at 779.78 521.9699999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "174e785b-f411-4220-aab7-59d93475ba7a")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 779.78 548.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2489b9a-2873-405b-b3d1-e0c820f52ab2")
+		(property "Reference" "C211"
+			(at 777.24 548.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 782.32 548.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 780.745 544.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 779.78 548.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 779.78 548.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 779.78 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 779.78 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cef40be3-2578-4223-b862-ab82c314fa19")
+		)
+		(pin "2"
+			(uuid "92130f11-5911-4ae6-993b-61efca68e336")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 779.78 544.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7445c600-8b8e-48ff-8833-b7d9e5664a8f")
+	)
+	(global_label "GND"
+		(at 779.78 552.4499999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0636e2e2-db9c-4ae5-84b9-2f9af556b58c")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 213.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "82b388a4-c566-47b6-9a4c-4a7c36b5cb26")
+		(property "Reference" "C212"
+			(at 807.72 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec7c0bf3-1e3f-4d7d-b6ed-b33f6ff69aa0")
+		)
+		(pin "2"
+			(uuid "fac4b6cb-d813-4d78-a4bd-1a726318062e")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 209.55 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ffab2244-b7ac-4430-9a07-ec5235879b84")
+	)
+	(global_label "GND"
+		(at 810.26 217.17000000000002 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "02fa4c44-f00c-47d0-9c33-ea83cdff16cd")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 243.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c1474a91-7447-465c-b014-71952077225a")
+		(property "Reference" "C213"
+			(at 807.72 243.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 243.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 243.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "201e3600-7695-4649-9aa7-1c2a392a2293")
+		)
+		(pin "2"
+			(uuid "69cda047-296a-4a41-8175-fecdfa5cbabf")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 240.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f441f075-e6c4-4fbf-ad4d-2a4834d05773")
+	)
+	(global_label "GND"
+		(at 810.26 247.65 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7d878e3b-ed4c-46a6-88b9-8432854e26b1")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 274.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4df572c-1c62-4c8b-8ebf-8777b4ed80a7")
+		(property "Reference" "C214"
+			(at 807.72 274.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 274.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 270.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 274.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad8d2164-454e-4c07-99e6-d6c91f8d7b70")
+		)
+		(pin "2"
+			(uuid "17d6e936-e263-414d-ba7a-b211dc6f6b2a")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C214")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 270.51 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7774b5e0-41ed-4c6f-a736-82fff3792859")
+	)
+	(global_label "GND"
+		(at 810.26 278.13 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58cd82b6-bd68-41ba-81d8-c4313cd01128")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 304.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1cdefeb9-da25-4830-af59-199d195a9036")
+		(property "Reference" "C215"
+			(at 807.72 304.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 304.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 300.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 304.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 304.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 304.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b216732-3c95-412a-b0dd-90c3fbf49aaf")
+		)
+		(pin "2"
+			(uuid "9c83d3f6-6bd0-4769-9439-b3c2e32801ed")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C215")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 300.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bc9a437-0afa-455b-9011-1df8ead46dd8")
+	)
+	(global_label "GND"
+		(at 810.26 308.61 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aeaac326-6bd8-409d-97c9-5c4577880c9e")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 335.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b34a2cb-e18f-4358-8488-fa3f2581dfac")
+		(property "Reference" "C216"
+			(at 807.72 335.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 335.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 331.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 335.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 335.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "045bd224-f062-4258-9629-1be442de0901")
+		)
+		(pin "2"
+			(uuid "10c77386-fd94-4cdd-b1fe-7faa982c1a84")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 331.46999999999997 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c79f97e1-dcf2-4929-83c0-609fa7da7b5f")
+	)
+	(global_label "GND"
+		(at 810.26 339.09 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "095113b9-ac51-45ec-9e06-0d32d2b0105c")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 365.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "db5eded7-fa91-4a4b-aa9a-30ff2be29de0")
+		(property "Reference" "C217"
+			(at 807.72 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 365.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 361.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 365.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 365.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ba88a77-6d0d-41a8-90d0-80a33cef5bac")
+		)
+		(pin "2"
+			(uuid "48494dc9-8df9-43d6-a8bb-5105a648fd09")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 361.95 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "608b08c5-9e9b-4afa-82eb-4b3ae39b6d5b")
+	)
+	(global_label "GND"
+		(at 810.26 369.57 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de7e7d03-cf8e-40f8-972d-a28a43fb0704")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 396.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c3436831-1264-46a6-b328-aa9b673afd1c")
+		(property "Reference" "C218"
+			(at 807.72 396.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 396.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 392.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 396.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09113c52-1480-4495-a0da-27fb895f026d")
+		)
+		(pin "2"
+			(uuid "0e24a4e0-53c5-41b2-94b9-aa34ab721b83")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C218")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 392.43 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fbd7c641-3dec-4c05-8d14-dd0b0777c657")
+	)
+	(global_label "GND"
+		(at 810.26 400.05 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "05b552a4-f327-4b37-b469-80094ec7b47e")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 426.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0eb4ac96-012a-4ddc-a88d-347989f6e929")
+		(property "Reference" "C219"
+			(at 807.72 426.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 426.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 422.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 426.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 426.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 426.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 426.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d066f62-c8b4-4a5c-ae59-a02bc0575238")
+		)
+		(pin "2"
+			(uuid "fe9329b4-5009-4806-a795-753823f6dd0c")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C219")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 422.91 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41d212ad-3279-42f9-bc3a-1901c2a336bb")
+	)
+	(global_label "GND"
+		(at 810.26 430.53000000000003 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd4b887d-4706-4ef5-949d-903cf6b70824")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 457.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "932f49a2-00e5-4ac6-b61b-92cba81cf517")
+		(property "Reference" "C220"
+			(at 807.72 457.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 457.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 453.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 457.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 457.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 457.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38ef8082-e8e6-4f0e-80ad-3008250326e4")
+		)
+		(pin "2"
+			(uuid "30ea44e2-5c7f-447d-b8b3-d50262ad966c")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C220")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 453.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01c9580a-43e6-4908-880a-97a0deda7ea0")
+	)
+	(global_label "GND"
+		(at 810.26 461.01 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "17bfccb4-9f37-4c55-ad62-b3286ceebacf")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 487.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b176358e-67cc-41d1-9f04-92d2e2c8be60")
+		(property "Reference" "C221"
+			(at 807.72 487.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 487.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 483.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 487.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 487.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 487.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0f95774-859c-496f-88ba-919de9786382")
+		)
+		(pin "2"
+			(uuid "d6480980-948a-4595-9826-46756c74b3e0")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C221")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 483.87 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2a31c8a-c505-4106-85d9-98826ea08ad5")
+	)
+	(global_label "GND"
+		(at 810.26 491.49 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3f4ec15-c3cc-4940-959b-a624859de86b")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 518.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c0bb3116-44d6-45aa-85a6-f956dd027fd3")
+		(property "Reference" "C222"
+			(at 807.72 518.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 518.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 514.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 518.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 518.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 518.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b11b182-69a5-438a-9505-e7fff9aaf137")
+		)
+		(pin "2"
+			(uuid "30bd6c24-8c5e-492c-bb38-ca64c94eadd1")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C222")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 514.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "02320e3c-5887-4819-bc92-1e5cc3c147ae")
+	)
+	(global_label "GND"
+		(at 810.26 521.9699999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9d0fb754-91c6-41bd-bb80-44ee25f4b6b3")
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 810.26 548.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dd551397-2327-4c36-bb88-368a1be06fe4")
+		(property "Reference" "C223"
+			(at 807.72 548.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000uF/100V"
+			(at 812.8 548.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH"
+			(at 811.225 544.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 810.26 548.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 810.26 548.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PKLH-100V102MK400"
+			(at 810.26 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOSHIN"
+			(at 810.26 548.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fce6580-4699-4974-a55c-395f81cf229b")
+		)
+		(pin "2"
+			(uuid "2f3adaef-c79c-4584-bc05-03f838fbdf02")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/37a3964e-ca84-4248-a5d2-d687ed53c62f"
+					(reference "C223")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VBAT"
+		(at 810.26 544.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ab7a792-23d0-4669-be2d-cfe51afcf83a")
+	)
+	(global_label "GND"
+		(at 810.26 552.4499999999999 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f84ee07b-c450-48df-accc-fc2f81137e27")
 	)
 	(sheet_instances
 		(path "/"

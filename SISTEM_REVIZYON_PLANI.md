@@ -563,10 +563,75 @@ Tüm entegrelerin pin → net eşleşmeleri datasheet'lerle karşılaştırıld�
 - **Doğrulama (kurallar devrede):** DRC 0 hata, 0 kart içi bağlantısız, parite 0. Kartlar arası 63 "bağlantısız" beklenen durum; 2'si bank ile güç kartı arasındaki VBAT/GND bara bağlantısı.
 - **Çıktılar:** `uretim/film_bank_gerber.zip`, montaj ve BOM'da 5. modül.
 
+## 2.18 Modül 5 revizyonu: film yerine KOSHIN KLH elektrolitik (5 Kasım 2026)
+
+**Neden:** kullanıcı kararı. TDK B32776G4506 yerine KOSHIN **PKLH-100V102MK400** kullanılacak (datasheet: KOSHIN DJJ-2875, `KLH-100V102MK400.pdf`, Özdisan).
+
+**Datasheet değerleri (KLH-100V102MK400):**
+
+| Özellik | Değer |
+|---|---|
+| Tip | Alüminyum elektrolitik, radyal, KLH serisi |
+| Kapasite / gerilim | 1000 µF ±%20 (20 °C, 120 Hz) / 100 V |
+| Çalışma sıcaklığı | −40 … +105 °C |
+| tan δ | ≤ 0.08 (120 Hz) |
+| Kaçak akım | ≤ 1000 µA (100 V, 2 dk) |
+| Empedans | ≤ 0.076 Ω (100 kHz, 20 °C) |
+| Ripple akımı | 2500 mA rms (100 kHz, 105 °C) |
+| Ömür | 5000 saat (105 °C) |
+| Gövde | Ø18 (+0.5) x 40 (+2.0) mm; bacak Ø0.8 mm, aralık 7.5 ±0.5 mm; havalandırma üstte |
+
+**Boyutlandırma:**
+- Gereken bara ripple akımı ≈ 0.6 · 100 A ≈ **50–60 A rms** (2.14).
+- **24 adet** seçildi: 24 x 2.5 A = **60 A rms** (105 °C değeri). Toplam **24 mF**, eşdeğer empedans ≈ 0.076 / 24 ≈ **3.2 mΩ**. 60 A'de kayıp ≈ 11 W, kapasitör başına ≈ 0.5 W.
+- **Gerilim payı:** 100 V, 60 V maksimum bara için %60 kullanım. Eski 63 V sorunu (K27) çözüldü.
+- **Kaçak akım:** ≤ 24 mA (bankın tamamı). Kontaktör açıkken bank bataryadan ayrılmış olmalı.
+- **Rezonans:** 24 mF ile ≈ 1 µH batarya kablosu f ≈ 1 kHz verir. Elektrolitiklerin ESR'si film bankına göre rezonansı daha iyi sönümler. Güç kartındaki MLCC'ler yüksek frekansı taşımaya devam eder.
+- **Dikkat:** ripple değeri 100 kHz ve 105 °C için verilmiş. Datasheet'te frekans ve sıcaklık çarpanı yok. 20 kHz PWM'de taşınabilen akım biraz düşük olabilir, düşük ortam sıcaklığında ise daha yüksek. Sürekli 5 kW'ta kapasitör gövde sıcaklığı Faz 8'de ölçülecek; hedef ≤ 85 °C.
+
+**Tasarım değişiklikleri:**
+- **Şematik (güç sayfası):** C200–C203 (film) silindi. **C200–C223** = 24 x `Device:C_Polarized` "1000uF/100V"; MPN PKLH-100V102MK400, üretici KOSHIN; pin 1 (+) VBAT, pin 2 GND. ERC'de yalnızca bilinen 4 TJA1051 uyarısı var.
+- **Footprint:** `bldc_proje:CP_Radial_D18.0mm_L40mm_P7.50mm_KOSHIN_KLH`. KiCad CP_Radial_D18 tabanlı. Ev yapımı kart için pad Ø3.0 mm, delik 1.2 mm (bacak Ø0.8 mm). 3D model 40 mm yüksekliğe uzatıldı.
+- **Kart:** **146 x 86 mm**, 2 katman. Kapasitörler 6 x 4 ızgarada, 20 mm aralıkla dizili; gövdeler arası 2 mm, courtyard'lar arası 1.5 mm.
+  - Üstte tam VBAT, altta tam GND dökümü; pad bağlantısı tam dolgu.
+  - J52/J53 yerinde kaldı; güç kartı J1/J2 hizası ve bara uzunluğu (≈ 25 mm) değişmedi.
+  - H9–H12 köşelere taşındı.
+- **Doğrulama (kurallar devrede):** DRC **0 hata**, 0 kart içi bağlantısız, **parite 0**. Kartlar arası 63 bağlantı beklenen durum. Uyarılar: 7 silk_edge, 5 lib_footprint_mismatch. Parite sırasında 23 adet "unconnected-(…/…)" ağ adı ve bazı Description alanları da şematikle eşitlendi.
+- **Çıktılar:**
+  - `uretim/film_bank_gerber.zip` (dosya adı korundu, içerik yeni kart).
+  - `montaj/` STEP ve render.
+  - BOM: Modül 5 "DC-link kondansatör bank kartı", 24 x PKLH-100V102MK400; Mekanik sayfasında 146 x 86 mm PCB satırı.
+- **Yedek:** `yedek_faz7/pre_klh/`.
+
+## 2.19 Kondansatör bankı güç kartıyla birleştirildi (6 Kasım 2026)
+
+**Neden:** kullanıcı kararı. Ayrı bank kartı (Modül 5) kaldırıldı. 24 x KLH, güç kartının sağ bölümüne petek (şaşırtmalı sütun) dizilimiyle yerleşti.
+
+- **Güç kartı:** 100 x 93 → **205 x 93 mm** (y 27–120), 2 katman, ev üretim kuralları değişmedi (GUC_KARTI kural alanı genişletildi).
+  - x 0–100: MOSFET / soğutucu bölümü, olduğu gibi.
+  - x 100–205: kondansatör alanı; soğutucu levhasının dışında.
+- **Dizilim:** 6 sütun x 4 kapasitör.
+  - Sütun içi aralık 19.0 mm; sütunlar arası 16.5 mm.
+  - Tek numaralı sütunlar 9.5 mm aşağı kaydırıldı (altıgen paketleme). Komşu merkezler 19.04 mm; gövdeler arası ≥ 0.5 mm (Ø18.5 maksimum gövdeye göre).
+  - İlk sütun J1/J2 lug'larının hemen sağında. Kapasitör pad'leri lug pad'lerinden ≥ 3.5 mm uzakta (lug kuralı).
+- **Bakır:**
+  - Üstte VBAT dökümü L biçiminde: MOSFET bölümünde eskisi gibi y 27–78.6, kondansatör alanında tam yükseklik.
+  - Altta GND dökümü tüm kartta.
+  - J1 (VBAT) ve J2 (GND) lug'ları bankın tam girişinde; bara ve J52/J53 artık yok.
+- **Montaj:** kondansatör bölümü soğutucunun dışında kalıyor. H9–H12 M3 delikleriyle (2 tanesi sütun aralarında, 2 tanesi sağ köşelerde) tabana ara parçayla sabitlenir. Ara parça yüksekliği, soğutucu yüzü + 4.8 mm ile aynı olmalı. İlk kapasitör sütunu (42 mm) ile üstteki kontrol kartının kenarı arasında ≈ 3.7 mm yatay boşluk var.
+- **Panel:** ana PCB'de gate, kontrol ve EESM kartları **+110 mm sağa** kaydırıldı (montaj anchor'ları da). 3D montajda yerleri değişmedi.
+- **Şematik:** J52/J53 silindi. ERC'de yalnızca bilinen 4 TJA1051 uyarısı var.
+- **Doğrulama (kurallar devrede, DRU BOM'suz):** DRC **0 hata**, 0 kart içi bağlantısız, **parite 0**. Kartlar arası 61 bağlantı beklenen durum (bank barası ile ilgili 2 bağlantı kalktı).
+- **Çıktılar:**
+  - `uretim/guc_karti_gerber.zip` (205 x 93 mm). `film_bank_gerber.zip` silindi.
+  - `montaj/` STEP'ler, `render_montaj_iso.png`, `render_guc_karti_ust.png`.
+  - BOM: C200–C223 "Güç kartı" modülünde. Mekanik sayfasında bank PCB'si, baralar ve M5 cıvatalar çıkarıldı; güç kartı PCB satırı 205 x 93 mm oldu.
+- **Yedek:** `yedek_faz7/pre_merge/`.
+
 ### 2.14.10 Hâlâ açık olanlar
-1. ~~Bara kondansatörü gerilim payı~~: 2.15.2 ile kapandı (450 V film bankı). Firmware V_BUS sınırı yine önerilir.
+1. ~~Bara kondansatörü gerilim payı~~: 2.18 ile kapandı (100 V KLH bankı, %60 kullanım). Firmware V_BUS sınırı yine önerilir.
 2. ~~Özel footprint land pattern'leri (2.14.9)~~: 2.16 ile kapandı.
-4. Film bankı + batarya kablosu rezonansı: Faz 8'de ölçülecek (2.15.2).
+4. Bank + batarya kablosu rezonansı ve **sürekli 5 kW'ta KLH gövde sıcaklığı**: Faz 8'de ölçülecek (2.18).
 3. Primer kaynaktan doğrulanamayanlar: SP0503BAHT pin şekli, MIC2128 ve kristal pad ölçüleri, LDL1117 kararlılık eğrileri, USB4105 pad ölçüleri.
 
 ## 3. Uygulama planı

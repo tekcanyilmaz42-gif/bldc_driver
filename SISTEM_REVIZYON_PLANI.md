@@ -628,10 +628,65 @@ Tüm entegrelerin pin → net eşleşmeleri datasheet'lerle karşılaştırıld�
   - BOM: C200–C223 "Güç kartı" modülünde. Mekanik sayfasında bank PCB'si, baralar ve M5 cıvatalar çıkarıldı; güç kartı PCB satırı 205 x 93 mm oldu.
 - **Yedek:** `yedek_faz7/pre_merge/`.
 
+## 2.20 Güç kartı yeniden yerleşim: kapasitörler MOSFET'lerin üstünde (6 Kasım 2026)
+
+**Kullanıcı isteği:** kapasitörler yanda değil MOSFET'lerin üstünde olsun, 4 sıra x 6 sütun, kart 120 x 150 mm. Yığın (gate/kontrol/EESM) kapasitörlerin yanında kalsın (kullanıcı onayı: 120 x 157). Ayrıca 2 katmanlı ev yapımı kartın sınırı nedeniyle "önerilen düzen" seçildi.
+
+**Sonuç kartı: 120 x 161 mm** (y 31–192). Neden 150 / 157 değil:
+- Kontrol kartı 76.5 mm derinliğinde ve 42 mm'lik kapasitörlerin üstüne gelemez.
+- MOSFET pin bandı 10 mm (iki sıra arası). Şönt bu bandın hizasında, konnektör boşluğuna dikey yerleşti; kapasitörler bunun altından başlıyor (+4 mm).
+
+**Yerleşim:**
+
+| Bölge | İçerik |
+|---|---|
+| y 31–106 (yığın altı) | Faz baraları: alt katman + üst katman kopyası, 3 iç içe L. Kartın sağ kenarında açık şerit (x 98–120): J3 U, J4 V, J5 W, J2 GND, J1 VBAT lug'ları. Gate/sense konnektörleri J26–J34 ve J46 eski yerinde, yığın değişmedi. |
+| y 106.5 / 116.5 | Alçak taraf (LS) sırası, gövdeler yukarı (gate kartlarının altına). Yüksek taraf (HS) sırası, gövdeler aşağı (kapasitörlerin altına). |
+| y 118–192 | 24 x KLH, 6 sütun x 4 sıra (adım 19.6 x 18.32 mm). Üstte VBAT, altta GND düzlemi. HS drain'leri doğrudan VBAT düzlemine bağlanıyor. Alt yüzde MLCC'ler (HS gövdelerinin hemen altında, ortak VBAT viyalı çiftler), TVS D38/D39 ve deşarj dirençleri R136–R138. |
+
+**Katman kullanımı (2 katman çözümü):**
+- **Band üst katman:** xSH barı (LS source'lar → şönt). Şönt üst yüzde, konnektör boşluğunda dikey (R1/R2/R3).
+- **Band alt katman:** faz bağlantıları (HS source ↔ LS drain, aynı x) ve faz sütunu (LS gövdelerinin altında, yukarı baraya).
+- **Gate izleri:** HS gate'leri alt katmandan yukarı. HS1 bir viyayla üst katmana geçip J26.1'e, HS2 alt katmanda J26.3'e gidiyor. LS gate'leri ve USH dönüşü (J27) üst katmanda. Hiç kesişme yok.
+- **Şönt GND'si:** 5 viya ile alt katman GND'sine, oradan kapasitörlerin GND düzlemine. Döngü kısa.
+- **Kelvin hattı:** SN üst katmanda, SP bir viyayla alt katmanda J28'e gidiyor.
+- **Snubber ve pull-down:** HS snubber'lar (C167/R130…) alt yüzde, band içinde. LS snubber'lar (C168/R131…) üstte, LS2'nin üstünde. LS pull-down'lar LS gate izlerinde, HS pull-down'lar J26 yanında.
+- **J46 (VBAT/GND):** kontrol kartı beslemesi, üst kenar boyunca J1/J2'den 1.5 mm izlerle.
+
+**Şematik/footprint değişiklikleri:**
+- Q1–Q12 → `bldc_proje:TO-220-3_Horizontal_TabUp_NoHole`. Kartta tab deliği yok. Courtyard yalnız pin + bacak bölgesini kapsıyor, çünkü gövdelerin üstünde kapasitör pedleri var.
+- R131/R133/R135 (LS snubber) 2010 → **1210** (Vishay CRCW1210, 0.5 W; kayıp ≈ 0.27 W).
+- KLH footprint courtyard'ı Ø18.3 mm'ye indi (nominal gövde Ø18).
+- Yerleşimde MOSFET referansları yer değiştirdi (Q8/Q7, Q2/Q1 vb.); gate ağları aynı.
+- BOM düzeltmesi: snubber dirençleri önceden 0603 olarak listeleniyordu. Şimdi 2010/1210 doğru MPN'lerle.
+
+**Mekanik (önemli):**
+- Kart soğutucunun **7.0 mm** üstünde: TO-220 4.5 + ped 0.3 + 2.2 mm boşluk. Kapasitör bacakları HS MOSFET gövdelerinin üstüne geliyor; bacak ucu ≤ 1.5 mm kesilmeli.
+- MOSFET'ler **alttan vidalanır:** havşa başlı M3, soğutucudan geçer; omuzlu naylon burç; somun ve naylon pul tabın üstünde. Bu, kart lehimlenmeden önce yapılır.
+- Soğutucu yalnız MOSFET gövdelerinin altında (≈ 92 x 54 mm). Kart H1–H8 ile ara parçalara oturur.
+- Lug'lar sağ şeritte, kontrol kartının yanında; üstleri açık.
+
+**Elektriksel notlar:**
+- Komütasyon döngüsü: HS drain → üstündeki kapasitör sırası (çok kısa) → GND düzlemi → şönt GND viyaları → şönt → xSH barı → LS source.
+- Dar bakır kesitler bakır telle takviye edilmeli:
+  - xSH barı (≈ 4–6.8 mm),
+  - faz bağlantıları (HS source ↔ LS drain, 10 mm),
+  - şönt GND viyaları (5 adet).
+- Faz baraları alt katmanda 13–14 mm, üstte kopyası var; F↔B bağlantısı 30 viyayla.
+
+**Doğrulama (kurallar devrede):** DRC **0 hata**, 0 kart içi bağlantısız, **parite 0**. Kartlar arası 61 bağlantı beklenen durum. Uyarılar: 2 silk_edge, 3 lib_footprint_mismatch.
+
+**Çıktılar:**
+- `uretim/guc_karti_gerber.zip` (120 x 161 mm).
+- `montaj/`: STEP'ler, `render_montaj_iso.png`, `render_guc_karti_ust.png`, `render_guc_karti_alt.png`.
+- BOM: Mekanik sayfası yeni montaja göre güncellendi.
+
+**Yedek:** `yedek_faz7/pre_mosfet_ustu/` (205 x 93 birleşik kart).
+
 ### 2.14.10 Hâlâ açık olanlar
 1. ~~Bara kondansatörü gerilim payı~~: 2.18 ile kapandı (100 V KLH bankı, %60 kullanım). Firmware V_BUS sınırı yine önerilir.
 2. ~~Özel footprint land pattern'leri (2.14.9)~~: 2.16 ile kapandı.
-4. Bank + batarya kablosu rezonansı ve **sürekli 5 kW'ta KLH gövde sıcaklığı**: Faz 8'de ölçülecek (2.18).
+4. Bank + batarya kablosu rezonansı ve **sürekli 5 kW'ta KLH gövde sıcaklığı**: Faz 8'de ölçülecek (2.18). 2.20'den beri ilk kapasitör sırası HS MOSFET gövdelerinin üstünde; ölçüm bu sırada yapılmalı.
 3. Primer kaynaktan doğrulanamayanlar: SP0503BAHT pin şekli, MIC2128 ve kristal pad ölçüleri, LDL1117 kararlılık eğrileri, USB4105 pad ölçüleri.
 
 ## 3. Uygulama planı

@@ -5148,7 +5148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 127 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5331,7 +5331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 38.1 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -5506,7 +5506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 172.72 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -5861,7 +5861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 38.1 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6224,7 +6224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 81.28 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6999,7 +6999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 261.62 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -7088,7 +7088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 81.28 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7177,7 +7177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 172.72 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8361,7 +8361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 353.06 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -8450,7 +8450,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 307.34 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -8876,7 +8876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 127 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -9059,7 +9059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp"
+		(property "Footprint" "bldc_proje:TO-220-3_Horizontal_TabUp_NoHole"
 			(at 215.9 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11761,7 +11761,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 517.652 213.36 90)
 			(hide yes)
 			(show_name no)
@@ -12161,7 +12161,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 517.652 335.28 90)
 			(hide yes)
 			(show_name no)
@@ -12561,7 +12561,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric"
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 548.132 60.96 90)
 			(hide yes)
 			(show_name no)

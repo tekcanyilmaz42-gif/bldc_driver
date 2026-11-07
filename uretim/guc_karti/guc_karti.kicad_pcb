@@ -98562,6 +98562,28 @@
 		(layer "Edge.Cuts")
 		(uuid "3a0eaf57-6389-49c9-8ca1-2e47c94efa32")
 	)
+	(gr_text "J1/J2 PABUC: MAKARON"
+		(at 109 110 0)
+		(layer "F.SilkS")
+		(uuid "4d694b44-aca1-4e3d-a11a-df109e75a043")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "VEYA BASLIK ZORUNLU"
+		(at 109 112 0)
+		(layer "F.SilkS")
+		(uuid "726f6105-74ab-431a-86e2-ca685b4353f4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
 	(segment
 		(start 58.5 86.54)
 		(end 47.45 86.54)

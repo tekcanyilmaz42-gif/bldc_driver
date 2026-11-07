@@ -10148,10 +10148,6 @@
 		(uuid "9f27546d-0c32-461e-a99b-a93640ebfed7")
 	)
 	(no_connect
-		(at 264.16 125.73)
-		(uuid "a00a6a4a-5279-48ef-a3fc-694e2e4597a8")
-	)
-	(no_connect
 		(at 464.82 361.95)
 		(uuid "bd8835d3-6cc5-4e6e-a882-229df9e1583e")
 	)
@@ -23793,7 +23789,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 355.6 427.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23961,7 +23957,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 355.6 377.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25461,7 +25457,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "1k"
 			(at 381 377.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29032,10 +29028,6 @@
 			(justify left bottom)
 		)
 		(uuid "16898315-a342-455d-a5d6-cf6528c55de4")
-	)
-	(no_connect
-		(at 264.15999999999997 72.39)
-		(uuid "660de779-b9cf-4d14-b954-a48ac61086e3")
 	)
 	(no_connect
 		(at 264.15999999999997 67.31)
@@ -33068,16 +33060,6 @@
 			)
 		)
 	)
-	(label "COIL_12V"
-		(at 1192.53 69.85 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cab1c054-7081-4853-b013-b997a9f2f887")
-	)
 	(global_label "GND"
 		(at 1200.1499999999999 69.85 0)
 		(effects
@@ -33097,6 +33079,428 @@
 			(justify left bottom)
 		)
 		(uuid "89214850-5979-44d7-9971-666d3f6578ad")
+	)
+	(label "12V_EXT"
+		(at 1192.53 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35b113bf-6746-42e4-9c0d-a71ee99f6708")
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 949.96 619.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4d3cf9ac-bacd-4348-a4a6-fc41490e9243")
+		(property "Reference" "J52"
+			(at 947.42 619.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Motor_Sicaklik"
+			(at 952.5 619.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 949.96 619.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 949.96 619.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 949.96 619.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c20d474-5c94-4a14-be75-9f4fa3948624")
+		)
+		(pin "2"
+			(uuid "246677e1-1fb3-435c-93cd-8e22131149a4")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "J52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 955.0400000000001 622.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b38a519a-176d-4846-bfb4-ac0c73bb304f")
+	)
+	(label "NTC_MOT"
+		(at 955.0400000000001 619.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "977d9bfe-5814-4dee-9516-cf24230a750b")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 949.96 650.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ead0629-ce7d-4c32-b4bd-e3724b329025")
+		(property "Reference" "R145"
+			(at 947.42 650.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k 0.1%"
+			(at 952.5 650.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 948.182 650.24 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 949.96 650.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 949.96 650.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa63f59d-f128-4f3b-8371-97f870f75627")
+		)
+		(pin "2"
+			(uuid "5aff9ac4-b3e8-41bd-872b-406cb9f97b9f")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "R145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "NTC_MOT"
+		(at 949.96 654.05 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4bec92d6-1b91-4d96-8fd9-11ed2735d481")
+	)
+	(global_label "3V3_ANA"
+		(at 949.96 646.4300000000001 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7c4aacc-7b8a-4f46-9d3a-92b7cc9ad01a")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 949.96 680.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72e0b8e2-9708-4333-9da3-242d5ad4b8e8")
+		(property "Reference" "R146"
+			(at 947.42 680.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22k"
+			(at 952.5 680.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 948.182 680.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 949.96 680.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 949.96 680.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac6b3e38-c234-4214-ad79-67be1cf4adf3")
+		)
+		(pin "2"
+			(uuid "23e116b4-3894-4ae5-8a11-57af795bd52d")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "R146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "NTC_MOT"
+		(at 949.96 676.9100000000001 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "803d946b-3962-4b8f-8d85-561443cc1ff2")
+	)
+	(label "NTC_MOT_ADC"
+		(at 949.96 684.53 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "88f46e5c-9cea-45e8-840b-b1c4630fcfa5")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 949.96 711.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f194fd0-f372-4bcd-8540-4e84a245ee5e")
+		(property "Reference" "C224"
+			(at 947.42 711.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 952.5 711.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 950.925 707.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 949.96 711.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 949.96 711.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "088941cb-cdce-4638-945d-0b359054d707")
+		)
+		(pin "2"
+			(uuid "254a8aa2-028b-453e-95b5-402be84909bc")
+		)
+		(instances
+			(project "bldc_driver_ai"
+				(path "/4546876e-c1f5-4107-853f-2caeec97ccab/83f0f78c-9aff-4168-80ed-98de4cc445ba"
+					(reference "C224")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(at 949.96 715.01 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e99acce-ef05-4707-a319-386493e9c660")
+	)
+	(label "NTC_MOT_ADC"
+		(at 949.96 707.3900000000001 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "356d21f4-fd90-4b8b-b87f-129b2d312ff1")
+	)
+	(no_connect
+		(at 264.15999999999997 72.39)
+		(uuid "8c785ce7-2821-4f0c-9604-d8f91f48eba8")
+	)
+	(label "NTC_MOT_ADC"
+		(at 264.15999999999997 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52e1efe0-d86c-4a71-a045-7cd28085ca43")
 	)
 	(sheet_instances
 		(path "/"

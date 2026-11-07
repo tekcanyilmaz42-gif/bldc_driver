@@ -98,265 +98,13 @@
 	)
 	(footprint ""
 		(layer "F.Cu")
-		(uuid "0de485d1-5b66-4750-b660-3dd4a3f48bae")
-		(at 0 0)
-		(property "Reference" "M3"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "09fd7fc7-0e01-4407-867f-3e3202864695")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "gate_driver_v"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d5333736-8a32-4efb-b455-12e2de40cfc7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "88cf1d6d-d008-444b-9144-32491d60340d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8d28715e-fd59-4059-a9ec-1395c0e5ef6f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr board_only)
-		(duplicate_pad_numbers_are_jumpers no)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d/gate_driver_v.step"
-			(offset
-				(xyz 0 0 19.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "3c8c36e1-3d3d-4adc-9134-ed64a1582ed5")
-		(at 0 0)
-		(property "Reference" "M4"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7d213964-e798-431e-9ee4-c35a89d27487")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "gate_driver_w"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "47549034-e0c3-49e4-9934-a5ca1524131a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "45f3cdf6-f3e9-4e74-b121-67ac78e100c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "47dd2f30-6e53-4ef2-a02b-37fed56b079e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr board_only)
-		(duplicate_pad_numbers_are_jumpers no)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d/gate_driver_w.step"
-			(offset
-				(xyz 0 0 19.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "4d5d1f04-672a-4a89-8044-4518980b3208")
-		(at 0 0)
-		(property "Reference" "M2"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "a3c7e758-f0b6-4898-b3b3-2a243dc6011f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "gate_driver_u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3e029d2e-8882-4a02-bbef-18c98be6d820")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "442b3398-31e5-4675-8d58-ebb0f7cba2ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "271f3570-eec3-4503-9587-cfa7bf013bfe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr board_only)
-		(duplicate_pad_numbers_are_jumpers no)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d/gate_driver_u.step"
-			(offset
-				(xyz 0 0 19.6)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "6a88dc21-cdcd-4576-a932-fdb30ff10f3f")
-		(at 0 0)
-		(property "Reference" "M5"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "02582765-7d72-4e00-8ae5-9c2fc6c3aeb6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "kontrol_karti"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "552aecc7-590f-48c9-8bce-d1ce5c9ede66")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9f9f5e9d-91f2-4947-a6c9-5c8cdf22c1c5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b3e3ffea-e35c-412c-aadc-ed188feddbbb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(attr board_only)
-		(duplicate_pad_numbers_are_jumpers no)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/3d/kontrol_karti.step"
-			(offset
-				(xyz 0 0 32.2)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint ""
-		(layer "F.Cu")
-		(uuid "ec204fae-b150-4800-86c3-c3a1740115ce")
+		(uuid "2e9b490a-4501-49b6-b55a-db3af895611a")
 		(at 0 0)
 		(property "Reference" "M1"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "cfa8719a-bec3-4bc0-bafc-0b6cb3398d2a")
+			(uuid "298b5b78-1cd9-4626-ad1a-e162fa302abe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -367,7 +115,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f7d9f13-7457-4e37-acfb-46aaf2a4009c")
+			(uuid "74636e9c-9630-49d7-bdb8-58d3cf5f28cb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -378,7 +126,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "384687c5-2bb4-493e-8bcd-a7942de9a7a7")
+			(uuid "53384192-e6b7-4865-a888-300930db514d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -389,7 +137,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d53101a6-8222-43c2-aa78-b8ce9ae2525c")
+			(uuid "5c4642e2-0ac6-4429-893f-904fa3ad7567")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -401,7 +149,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/guc_karti.step"
 			(offset
-				(xyz 0 0 7)
+				(xyz 0 0 8.5)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -413,24 +161,24 @@
 	)
 	(footprint ""
 		(layer "F.Cu")
-		(uuid "f32b6f48-5516-484f-87e6-cedb058a1957")
+		(uuid "452af210-f993-4136-a6d8-a89fc93c5906")
 		(at 0 0)
-		(property "Reference" "M6"
+		(property "Reference" "M3"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "30ad3a44-a79f-4019-9dc2-6179b6d28ba3")
+			(uuid "0a5d63bf-3979-4a4f-a63a-d058e089ac30")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "eesm_modulu"
+		(property "Value" "gate_driver_v"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1ed4c790-4b8e-4e81-b8ec-832136fa156b")
+			(uuid "9e21dd2a-73f6-414e-a201-b8d8b8d636e4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -441,7 +189,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eae2de52-a10d-4247-8fa1-10a9c9179676")
+			(uuid "2a58c401-3c0e-46b0-babf-7b6c0adfb278")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -452,7 +200,196 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0da10b7a-f312-4a7a-b2b7-62defeb081d8")
+			(uuid "120d68ef-87e9-44c2-a804-52d55d947926")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d/gate_driver_v.step"
+			(offset
+				(xyz 0 0 21.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "73a4d989-6733-40df-982d-32125dda97d3")
+		(at 0 0)
+		(property "Reference" "M4"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a0e3fc30-3c6c-4c35-bc81-b56dcbce69fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "gate_driver_w"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "88478554-5b0b-4f93-8656-6e4c3b648954")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c1dd048-3a39-4e0e-9cad-c5b3a030ff42")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a24f900-7716-4ca3-be02-c6a45daa4f15")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d/gate_driver_w.step"
+			(offset
+				(xyz 0 0 21.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "7cc9d373-b9ce-418b-8ed1-a3dce2ece796")
+		(at 0 0)
+		(property "Reference" "M5"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a1dc4259-9aa1-4e45-b2b7-14cebb03a0b2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "kontrol_karti"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf789354-5af9-4505-b022-6d8590152d85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "310bea2c-7f3c-4120-b73c-f5af021ed0ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f816bcbe-e63b-4663-905a-c4a0ea3a3f33")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d/kontrol_karti.step"
+			(offset
+				(xyz 0 0 33.7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "843bd9ed-5a8a-4963-b398-4fa9b18f78ae")
+		(at 0 0)
+		(property "Reference" "M6"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2821fcac-0db9-42cf-8e36-3ff6a2894806")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "eesm_modulu"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f77181b6-9e37-4446-b4c0-b5992dc88b97")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "858eb8dd-70d4-481e-ba17-6a498d59f773")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f4291ad-bff9-4dba-855d-8f8d29ff5b17")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -464,7 +401,70 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d/eesm_modulu.step"
 			(offset
-				(xyz 0 0 44.8)
+				(xyz 0 0 46.3)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "a61834c3-525c-44c5-90f2-5a7af06b6331")
+		(at 0 0)
+		(property "Reference" "M2"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7acfd745-aa82-4eca-ae24-dee7a5b043cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "gate_driver_u"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aeed4723-8404-4608-b73e-1af8220bc4ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e1e8ef2-9caf-4172-9ebf-d93017391925")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7dedd13-e549-4935-a35b-2590acdc6882")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only)
+		(duplicate_pad_numbers_are_jumpers no)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d/gate_driver_u.step"
+			(offset
+				(xyz 0 0 21.1)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -482,7 +482,7 @@
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "8e994df0-0e78-4aea-adcc-28a4daabafc0")
+		(uuid "84f2efad-df12-499c-8a88-6ff61d898bb5")
 	)
 	(gr_line
 		(start 0 138)
@@ -492,7 +492,7 @@
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "abe8ea98-6bfd-44bd-a234-80e2daf26f93")
+		(uuid "38f4ad01-55c6-44ba-9f65-34b8c867dc1a")
 	)
 	(gr_line
 		(start 91 85)
@@ -502,7 +502,7 @@
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "b62b71a5-e361-485c-83c4-822e9134acc6")
+		(uuid "a9bf7a97-baf9-4e29-8c31-2063eb0d48c6")
 	)
 	(gr_line
 		(start 91 138)
@@ -512,12 +512,12 @@
 			(type default)
 		)
 		(layer "Edge.Cuts")
-		(uuid "46464a5e-0bc9-4950-9bc2-a2756ec3cf00")
+		(uuid "2ece8947-eae7-4cd7-b1bd-24e38c57178c")
 	)
 	(gr_text "3D MONTAJ: Katman1 Guc / Katman2 Gate Driver U-V-W / Katman3 Kontrol / Katman4 EESM  (alt plaka = 15 mm aluminyum sogutucu; IRFB4110 tablari plakaya basar)"
 		(at 0 -6 0)
 		(layer "Cmts.User")
-		(uuid "53e36113-c20d-4eb9-9ac3-838e44de2b70")
+		(uuid "b93fa254-7e39-4816-9efb-de1dd33847d9")
 		(effects
 			(font
 				(size 1.27 1.27)

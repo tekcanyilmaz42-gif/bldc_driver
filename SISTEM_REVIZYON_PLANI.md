@@ -683,10 +683,46 @@ Tüm entegrelerin pin → net eşleşmeleri datasheet'lerle karşılaştırıld�
 
 **Yedek:** `yedek_faz7/pre_mosfet_ustu/` (205 x 93 birleşik kart).
 
+## 2.21 Üçüncü inceleme düzeltmeleri (7 Kasım 2026)
+
+Kullanıcı kararıyla uygulananlar:
+
+| Konu | Önce | Şimdi |
+|---|---|---|
+| Harici 12 V TVS | D43 (SMAJ15A) F1'in önünde, COIL_12V'te. Uzun süren aşırı gerilimde PTC atmadan TVS yanardı. | D43 katodu **12V_EXT**'e (F1'in arkası) bağlandı. Aşırı gerilimde TVS iletime geçer, F1 atar. Kartta D42'nin sağ altında; 12V_EXT'e alt katmandan kısa bir köprüyle bağlı. |
+| Batarya pabuçları | J1–J2 arası 15 mm, pabuçlar dönünce değebilir. | Makaron veya izolasyon başlığı **zorunlu**: BOM'un Mekanik sayfasında ayrı satır; güç kartında J1'in altına ipek baskı uyarısı ("J1/J2 PABUC: MAKARON VEYA BASLIK ZORUNLU"). |
+| Kart yüksekliği (soğutucu üstü) | 7.0 mm; kapasitör bacağı ile MOSFET gövdesi arası ≈ 0.7 mm. | **8.5 mm**: TO-220 4.5 + ped 0.3 + 3.7 mm boşluk. Bacak ≤ 1.5 mm kesilince ≈ 2.2 mm pay kalır. MOSFET bacak boyu (≈ 13 mm) yeterli; dikey kısım ≈ 9 mm. |
+| Motor konumu | Hall için 5 V besleme yoktu. | **Enkoder kullanılacak** (kullanıcı kararı). Enkoder soketi 3.3 V beslemede kaldı. Seri dirençler R71/R73/R75 100 Ω → **1 kΩ**: 5 V push-pull çıkışlı bir enkoder takılsa bile pin akımı ≤ 1.4 mA (dsPIC sınırı 5 mA). |
+| Motor sıcaklığı | Giriş yoktu. | **J52 "Motor_Sicaklik"** (2 pin, üst kenar, enkoder soketinin sağında): R145 2.2 kΩ %0.1 pull-up (3V3_ANA), R146 22 kΩ seri, C224 100 nF → **U6 pin 40 (AN16/RC7)**. |
+
+**Motor sıcaklık girişi, ayrıntı:**
+- 2.2 kΩ pull-up hem 10k NTC'ye (25 °C'de ≈ 2.7 V, 100 °C'de ≈ 1.0 V) hem de KTY84-130'a (25 °C'de ≈ 0.7 V, 150 °C'de ≈ 1.2 V) uyar. Sensör akımı ≤ 1.2 mA, yani KTY84 için uygun.
+- 22 kΩ seri direnç: sargı yalıtımı bozulup hatta 60 V gelirse pine giren akım ≈ 2.6 mA kalır (pin klemp diyodu, sınır 5 mA).
+- Pin seçimi: önce pin 19 (AN23/RE3) düşünüldü, ancak 0.5 mm aralıklı komşu pinler nedeniyle kaçış yolu yoktu. Pin 40 seçildi; ADC hattı 39.8 mm, 2 viya.
+- Bu hat U6 altındaki GND adasını kesti; üst katmanda 1.35 mm'lik bir GND köprüsü (2 viya) eklendi.
+- Motor datasheet'i okunamadı: **sensör tipi ve J52 pin dizilimi motor kablosuna göre teyit edilmeli.**
+- Firmware'de ADC kanalı AN16, tabloyu sensör tipine göre seçmek gerekiyor.
+
+**Değişmeyen (bilinçli):**
+- F1 (PTC 1.1 A) sıcakta tutma akımı düşüyor. Kullanıcı yalnız D43'ün taşınmasını istedi.
+- U21 (5 V LDO) 12 V rayından besleniyor. Ray artık F1 + D43 ile sınırlı (kıskaç ≈ 24 V), ama LDL1117'nin mutlak sınırına yakın. Önerilen düzeltme: CAN beslemesini 5V_SYS'ten almak, U21'i kaldırmak.
+- MOSFET değişimi kartın sökülmesini gerektiriyor; prototip için kabul edildi.
+
+**Doğrulama:** ERC'de yalnız bilinen 4 TJA1051 uyarısı. DRC **0 hata**, **0 kart içi bağlantısız**, **parite 0**. Kartlar arası 61 bağlantı beklenen durum.
+
+**Çıktılar:**
+- Gerber: `uretim/` altında 6 modül (güç ve kontrol kartı değişti).
+- Montaj: STANDOFF 8.5 mm ile yeniden üretildi.
+- BOM: R145, R146, C224, J52; R71/R73/R75 1 kΩ; makaron satırı; ara parça 8.5 mm.
+
+**Yedek:** `yedek_faz7/pre_inceleme3/`.
+
 ### 2.14.10 Hâlâ açık olanlar
 1. ~~Bara kondansatörü gerilim payı~~: 2.18 ile kapandı (100 V KLH bankı, %60 kullanım). Firmware V_BUS sınırı yine önerilir.
 2. ~~Özel footprint land pattern'leri (2.14.9)~~: 2.16 ile kapandı.
 4. Bank + batarya kablosu rezonansı ve **sürekli 5 kW'ta KLH gövde sıcaklığı**: Faz 8'de ölçülecek (2.18). 2.20'den beri ilk kapasitör sırası HS MOSFET gövdelerinin üstünde; ölçüm bu sırada yapılmalı.
+5. Motor (QS 48 V 5000 W): sıcaklık sensörü tipi (NTC / KTY84) ve sensör kablosu pin dizilimi datasheet'ten teyit edilecek (2.21). Enkoderin besleme gerilimi de (3.3 V soket) teyit edilmeli.
+6. U21 (5 V LDO) hâlâ 12 V rayında; CAN'ı 5V_SYS'ten besleme önerisi beklemede (2.21).
 3. Primer kaynaktan doğrulanamayanlar: SP0503BAHT pin şekli, MIC2128 ve kristal pad ölçüleri, LDL1117 kararlılık eğrileri, USB4105 pad ölçüleri.
 
 ## 3. Uygulama planı
